@@ -1,11 +1,8 @@
 package ssu.insadomapp;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -19,10 +16,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+
+import java.util.List;
 
 public class Reception extends AppCompatActivity {
 
@@ -41,14 +38,39 @@ public class Reception extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private SharedPreferences sharedpreferences;
+    private HomeDataSource datasource;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.first_screen);
-        ImageButton buttons[] = new ImageButton[9] ;
-        int numberHome = 3;
         setContentView(R.layout.activity_reception);
+
+        // Opening SharedPreferences
+//        sharedpreferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
+
+        //Database
+        datasource = new HomeDataSource(this);
+        datasource.open();
+
+        List<Home> homes = datasource.getAllHome();
+
+        /*String essai_nom = "mamoune"; String essai_URL = "172.30.3.66:8080";
+        Home home = new Home();
+        home.setName(essai_nom);home.setURL(essai_URL);
+        */
+
+        //datasource.createHome(home); //ok ça marche
+        //datasource.deleteHome((long) 2 ); //ok ça marche
+        //datasource.deleteAllHome(); // ok ça marche
+
+
+        Log.i("DEBUG_MUNIER", "onCreate: database" + "liste of home " + homes.toString() + "taille" +homes.size() );
+
+
 
 
         // Create the adapter that will return a fragment for each of the three
@@ -68,27 +90,25 @@ public class Reception extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-
-        });
+      });
 */      Log.i("DEBUG_MUNIER", "onCreate: after pageAdapter");
 
+/**
+*
+*        for (int i = 1; i<=9 ; i++) {
+*            String buttonID = "receptionButton" + i ;
+*            int resID = getResources().getIdentifier(buttonID, "id", "ssu.insadomap");
+*            buttons[i-1] = ((ImageButton) findViewById(resID));
+*        }
+*
+*        for (int i=0 ; i <= numberHome && i < 9 ; i++ ) {
+*            //  buttons[i].setImageResource(R.drawable.icone_house);
+*        }
+ */
 
-        /*
 
-        for (int i = 1; i<=9 ; i++) {
-            String buttonID = "receptionButton" + i ;
-            int resID = getResources().getIdentifier(buttonID, "id", "ssu.insadomap");
-            buttons[i-1] = ((ImageButton) findViewById(resID));
-        }
 
-        for (int i=0 ; i <= numberHome && i < 9 ; i++ ) {
-            //  buttons[i].setImageResource(R.drawable.icone_house);
-        }
 
-        //     ImageView tmp = (ImageView) findViewById(R.id.imageView);
-  //      tmp.setImageResource(R.drawable.icone_house);
-
-        */
 
 
 
@@ -145,7 +165,7 @@ public class Reception extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 8;
         }
 
         @Override
@@ -190,9 +210,22 @@ public class Reception extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+            int NBRE_MAISON = 3;
             View rootView = inflater.inflate(R.layout.fragment_reception, container, false);
     //        TextView textView = (TextView) rootView.findViewById(R.id.section_label);
     //        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+       // TODO RECUPERER la base de donné et la liste      getArguments().get
+
+
+            ImageView tmp = (ImageView) rootView.findViewById(R.id.imageButton);
+            if( getArguments().getInt(ARG_SECTION_NUMBER) < NBRE_MAISON ){
+                tmp.setImageResource(R.drawable.icone_house);
+            }else if( getArguments().getInt(ARG_SECTION_NUMBER) == NBRE_MAISON ){
+                tmp.setImageResource(R.drawable.icone_house_plus);
+            }else{
+                tmp.setImageResource(R.drawable.transparent);
+            }
+
             return rootView;
        }
     }
