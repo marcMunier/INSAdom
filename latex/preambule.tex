@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Préambule type                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%% Classe dudit Document %%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,openany]{report} % sert à définir des propriétés e base sur les articles
+% Autre paramètres connnus: 	*book => pour de vrais livres
+%				*article pour des artiles dans des revues scientifiques, des présentations, des rapports courts, des documentations, des invitation etc....
+%				*report por des rapports plus long contenant plusieurs chapitres, des petits livres, des thèses
+%				*Slides pour des transparants
+%				*foiltex
+% Option: Xpt taille de la police,  4apaper/letterpaper/a5paper/b5paper/executivepaper, fleqn, leqno, titlepage/notitlepage indique si une nouvelle page doit être commencée après le titre du document, twocolumn,twoside/oneside,
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Package %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{doc}% permet de documenter des programmes (cf doc.dtx]
+\usepackage{exscale} % fournit des version de taille de caractère que LaTeX va utiliser (cf ltexscale.dtx)
+\usepackage{fontenc} % spécifie le codage des police de caractère que LaTeX va utiliser (cf ltoutenc.dtx)
+%\usepackage[latin]{inputenc} %Autorise les caractères acentués
+\usepackage{ifthen} % fournit des commandes de conditions (cf ifthen.dtx)
+\usepackage{latexsym} %permet l'utilisation de la police des symboles LaTeX
+\usepackage{makeidx} %fournit des commandes pour réaliser un index
+\usepackage{syntonly} % analyse le doc sans le formater
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}% permet de spécifier le codeage des caractère utiliser dans le source.
+\usepackage[english,francais]{babel}
+%\usepackage{asmath} %Fonctions servant à l'écriture mathématique
+\usepackage{xspace} %Fonctions permettant d'introduire des espaces
+\usepackage{xargs} %Permet d'utiliser de définir plus simplement des fonctions
+\usepackage{trace}%Permet d'utiliser des traces de debbug
+\usepackage{show2e}% debbug
+\usepackage[pdftex]{graphicx}
+
+%%%%%%%%%%%%%%%%% Style du pied de page %%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{plain}% imprime le numéro de page au milieu du pied de page
+%\pagestyle{heading}%imprime le titre du chapitre courant et le numéro dans l'en tête et laisse le pied de page vide.
+%\pagestyle{empty}% laisse l'en tête et le pied de page vide
+
+
+%Nota bene: On peut changer le pied de page en court en utilisant \thispagestyle
+
+
+%%%%%%%%%%%%%%%%% Césure   %%%%%%%%%%%%%%%%%%%%%%%%
+
+\hyphenation{FORTRAN}
+\hyphenation{An-ti-cons-ti-tu-tion-nel-le-ment}
+
+

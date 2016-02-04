@@ -1,0 +1,224 @@
+%TODO synthèse
+%TODO glossaire et bibliographie etc ..
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Préambule                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{./preambule}%
+\input ./preambule.tex %sans saut de ligne
+
+
+%%%%%%%%%%%%%%Titre%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Automatisation de la détection d'événements de sécurité au sein du centre technique de la Gendarmerie nationale} % Titre du document
+\author{Marc MUNIER} % Auteur
+\date{\today} % Date de création
+
+
+%%%%%%%%%%%%%%%%%%%%%%%Debut Doc%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} % Début du document
+%%%%%%%%%%%%%%%%%%%%%%Page de Garde%%%%%%%%%%%%%%%%%%%%
+{
+\setlength{\oddsidemargin}{0cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headsep}{0cm}
+
+\begin{minipage}{0.75\textwidth}
+\includegraphics[scale=0.5]{images/insa_logo}
+\vspace{2cm}
+\maketitle
+\vspace{4cm}
+\includegraphics[scale=0.3]{images/fortRosnyPorte}
+\end{minipage}
+\hspace{3cm}
+\begin{minipage}{0.25\textwidth}
+\fbox{\parbox[s][\textheight][s]{4cm}{%
+\centering
+MUNIER Marc\par
+4A STI\par
+2014/2015\par\vfill
+Date du stage: 08/06/2015-31/07/2015\par\vfill%
+Nom du maître de stage: Lieutenant Rémi DUBOIS\par\vfill%
+Enseignant réfèrant: Pr.~Benjamin NGUYEN\vfill
+}}
+\end{minipage}
+
+\clearpage
+}
+%%%%%%%%%%%%%%%%%%%%%%%Page Vierge%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Remerciment %%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Remerciement}
+En premier lieu, je remercie le Colonel SELLINI André, commandant le centre technique de la Gendarmerie nationale de m'avoir acceuillit et logé pendant ces deux mois de stage.
+
+Je tiens aussi à remercier le lieutenant-colonel CHÂTEAU Jean-Pascal commandant le service de traitement de l'information de la Gendarmerie.
+
+Mes remerciments vont aussi vers le lieutenant DUBOIS remi, ancien élève de l'école nationale supérieure de Bourges qui a été mon tuteur de stage. Je lui exprime ma gratitude pour l'énergie et le temps qu'il a su me donner tout au long du stage.
+
+Je tiens aussi exprimer ma gratitude envers l'Adjudant-chef~PAVIS Emmanuel, l'adjudant~RUBAN Damien et le Chef~MERLE Julien constituant l'équipe du GSOP. Je les remercie pour leur accceuil, leur aide et leur soutient qu'il m'ont donné tout au long de ce stage.
+
+Je remercie M\up{me} Prevost Cécile et toutes les personnes qui ont contribuées à l'organisation de la journée des anciens.
+
+Je remercie mon tuteur Nguyen Benjamin.
+Enfin je remercie aussi tout le personnel de l'établissement.
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%Résumé%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Résumé}
+Ce rapport présente mon travail et les enseignements acquis lors de mon stage de deuxième année d'école d'ingénieurs au seins du Centre technique de la Gendarmerie nationale. 
+
+Ce centre technique acceuille en ces lieux le service de traitement de l'information de la Gendarmerie (STIG). Ce service a pour vocation de garantir la continuité des applications, l'intégrité et la confidentialité de données sensibles. L'enjeux de ces vocations est cruciale dans un milieu tel que la gendarmerie. En effet, les applications hébergées par ce service peuvent sauver des vies humaines. Et de part cette raison, on peut tout à fait comprendre que la sécurité informatique soit une priorité pour le STIG.
+
+C'est pourquoi en 2014, le STIG crée un nouveaux groupe chargé de la sécurité opérationelle.Ce groupe est composé de quatres gendarmes de carrières et est dirigé par le Lieutenant Dubois, officier de gendarmerie possédant un diplome d'ingénieur délivré par l'école nationale supérieur de Bourges (ENSIB).
+
+La mission qui m'a été confiée, fut d'automatiser la détection d'évènement de sécurité dans l'historique des événments survenus dans les différents serveurs du STIG. Concrétement mon projet se résume à l'élaboration d'un outil informatique qui préviendrait les autorités compétantes lors d'évènement mettant en cause la sécurité du Service.
+
+C'est au travers de deux mois de stage et de projets que j'ai pu finalement proposer une version, non définitive mais fonctionnelle de cet outil informatique.
+%%%%%%%%%%%%%%%%%%%%%table des matières%%%%%%%%%%%%%%%
+\newpage
+\tableofcontents
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+Dans le cadre de ma formation d'ingénieur spécialisé dans la sécurité et les technologies informatiques à l'INSA centre val de Loire, j'ai eu la possibilité de réaliser un stage de deux mois. J'ai effectué ce stage au sein de la gendarmerie nationale. Il fait suite à ma deuxième année dans le cursus ingénieur.
+
+Dans ce rapport, je vous présenterai brièvement la gendarmerie nationale puis l'apport de mon stage dans cette institution nationale.
+\section{Présentation de l'entreprise}
+\subsection{Histoire de la Gendarmerie Nationale}
+La Gendarmerie Nationale est l'héritière des traditions et coutumes de la maréchaussée. La maréchaussée était une institution de l'état composée de militaires plus disciplinés que les autres. Les autorités compétentes de l'époque lui avaient attribué comme mission de contrôler et surveiller les autres militaire, qui étaient alors plus débandés et pillards. Cette mission s'est peu à peu étendue à l'ensemble de la population et à l'ensemble du territoire national. Pour répondre à cette nouvelle prérogative, la maréchaussée crée en 1720 les brigades. Ce sont des unités organiques répandues à travers le territoire national.
+
+En 1791, sous l'autorité du Directoire, la maréchaussée prit l'appellation de Gendarmerie Nationale. Elle perdit par la même occasion ses fonctions de justice prévôtale.
+
+Cette institution de l'état était placée sous le commandement des maréchaux. 
+%\subsection{Histoire du Centre technique de la Gendarmerie Nationale}
+%\subsection{Organigramme du Service Technique de la Gendarmerie Nationale}
+\subsection{Prérogative du Groupe de la surveillance opérationnelle}
+Le Groupe de la Surveillance Opérationnelle communément nommée, au sein du CTGN, par l'acronyme GSOP, possède deux missions essentielles. D'une part, il doit gérer la sécurité du parc informatique de Rosny sous-bois, centre névralgique du réseau de la Gendarmerie Nationale. D'une autre part, il doit aussi veiller sur les événements de sécurité des différentes unités réparties sur le territoire national.
+\section{Projet} % Section #2
+Le projet qui m'a été confié consiste à réaliser un outil qui permet de détecter et d’identifier rapidement les attaques contre un parc informatique. Pour cela, cet outil doit analyser et interpréter les logs et configuration des différents serveurs du parc. Ce projet est composé de deux parties.
+\subsection{Présentation}
+L'outil mis en place à la fin de ce projet répond à des attentes bien identifiées. Il se place entre deux autres outils: le collecteur et CYTADEL. CYTADEL est un logiciel qui génère des tickets. Ils permettent d'identifier les différentes tâches à effectuer. 
+
+L'outil implémenté dans ce projet récupère les données du collecteur et génère une sortie compatible avec CYTADEL
+\subsubsection{Entrée}
+L'entrée de l'outil est un chemin vers un dossier que l'on nomme LATEST. Ce dossier contient d'autre sous dossier représentant chaque serveur du parc informatique et contenant des informations essentielles à la sécurité et à la veille des serveurs. Les informations récoltées sont les différents journaux de logs de la journée (contenus dans /var/log), une copie du dossier /etc/ contenant la configuration de la machine et le retour de certaines commandes (telle que nestat, who, etc..). Les informations sont enregistrer dans leur format originel c'est à dire dans des fichiers texte.
+\subsubsection{Sortie}
+La sortie doit être compatible avec l'entrée de CYTADEL. Le format choisi est l'IDMEF (littéralement intrusion détection message exchange format). Ce format est utilisé pour échanger des rapports d'incident entre des logiciels d'intrusion et de prévention d'intrusion et de collecte d'information de sécurité.
+
+Ce format de sortie a été choisi car il possède plusieurs qualités.
+
+La première est le fait qu'il soit une extension du format XML et ainsi il permet de structurer les données.
+
+La seconde est l'universalité du langage.
+Les alertes levées par VIGIES doit contenir le maximum d'information en un minimum de place.
+
+Ainsi les différentes alarmes contiennent les informations suivantes:
+%TODO liste
+Le nom et le numéro identifiant de l'alarme, la gravité de l'alarme, l'origine de l'action pour laquelle l'alarme a été levée et des données additionnelles.
+\subsection{L'existant}
+Au début du projet une première version de VIGIES avait déjà été mise en place. Cette version répondait à un besoin urgent sur un parc de machine assez restreint. Etant donné le nombre de machine devenait de plus en plus important et que  de nouveaux logiciels (comme CYTADELLE) ont été implémenté une mise à jour de VIGIES devenait indispensable.
+
+La nouvelle version de VIGIES devait répondre à de nouvelles contraintes et devait s'inspirer de la version existante.
+\subsubsection{Infrastucture IPMS}
+L'objectif de VIGIES est de protéger un parc informatique appartenant à la Gendarmerie Nationale. Ce parc est une infrastructure de production mutualisée et secourue (IPMS). Cette infrastructure est hébergée sur deux sites distincts, le premier à Rosny sous-bois (93) au CTGN et le deuxième au fort de Nogent (94).
+\subsubsection{Vigies}
+L'outil VIGIES (Veille de l'IPMS de Gestion des Incidents et Evènements de Sécurité) était déjà implémenté. La version en place au début du projet se servait des interpréteurs de commande bash et awk. Il contenait un script principal qui dans un premier temps  lançait le collecteur pour créer le dossier latest (cf au-dessus). Ce script lançait ensuite tour à tour une vingtaine de scripts.
+Ces scripts recherchaient à l'intérieur des fichiers de logs, remontés par le collecteur, des motifs remarquables (tel que ACCEPTED ou REFUSED pour les logs de ssh). Il plaçait ensuite le résultat dans des fichiers textes. Certains scripts généraient déjà des résultats un peu poussés comme des graphiques et des pages html.
+
+Les problèmes de cette version de VIGIES sont les suivants:
+%TODO liste
+- Des performances médiocres dues à l'interpréteur de commande bash
+- Des parties non distinctes entre les différents composants de l'outil 
+- Une sortie non-universalisée, non structurée. En effet, la sortie de l'ancienne version de VIGIES était des documents textes, ce qui était très bien lorsque le parc informatique était petit. Mais cette solution montra ces limites dès lors que le parc grandit. La recherche de renseignements précis devenait alors assez chronophage pour l'utilisateur. 
+\subsubsection{Sytadelle}
+Le logiciel Sytadelle (Système de Traitement des Alertes et de Discrimination des Evènements Légitimes) est un logiciel chargé de gérer la répartition du traitement des alarmes. Ce logiciel est basé sur le principe du ticket. L'utilisateur repère une anomalie, grâce à un autre outil (comme VIGIES), il crée donc un ticket dans lequel il renseigne des champs qui permettent d'identifier le problème. Cet utilisateur va ensuite attribuer à un personnel la résolution de ce problème. 
+\section{Contraites} % Section #2
+Les contraintes afférentes à ce projet sont multiples et variées. Ceci est dût dans un premier temps à l'environnement très spécifique de ce stage mais aussi au faite que l'outil devait être efficace et modifiable.
+\subsubsection{Langage}
+Le choix du langage fut un tournant crucial de la préparation de ce projet. Nous devions avoir un langage qui réponde au critère suivant :
+%TODO liste
+Le langage choisit devait répondre à plusieurs exigences. Il devait ne pas nécessiter de compilation, être plutôt performant, être autorisé dans l'entreprise et être exploitable par tous. Nous avons donc choisi le langage Perl. Ce choix résulte du fait que Perl est un langage script connu par tous les STIG (Service Traitement de l’Information de la Gendarmerie). Il possède de nombreux modules disponibles facilement grâce au logiciel CPAN. Enfin le dernier mais pas le moindre argument est le fait que Perl est un langage de programmation qui a été inventé pour gérer et manipuler les chaînes des caractères.
+
+L'implémentation devait se faire à l'extérieur du réseau sécurisé. Ce choix permettait de ne pas mettre en péril la sécurité du parc informatique. Il a été retenu car il ne ralentissait pas le projet. Néanmoins ceci  rendait les tests moins diversifiés et plus contraignants à mettre en place.
+
+
+
+\section{Partie préliminaire} % Section #2
+La première partie de ce stage consistait à améliorer, c'est à dire ajouter la génération d'alarme, à la première version de VIGIES.
+Pour réaliser cette partie, je me suis basé sur la sortie de VIGIES 1.0 et avec les outils du langage awk et grep, je générais du XML.
+\subsubsection{Points négatifs}
+Le point négatif de cette partie est le fait qu'elle ne servira pas à la fin de du projet. En effet, la deuxième partie de mon projet consiste à changer la sortie de VIGIES, c'est à dire l'entrée de ce générateur d'alarme.
+\subsubsection{Points positifs}
+Les points positifs de cette partie sont multiples.
+
+Cette partie m'a permis de mieux comprendre et visualiser l'étendu du projet. En effet grâce à cette partie j'ai pu dans un premier temps réfléchir au type d'alarme à implémenter, ceci en faisant abstraction de la façon dont les informations étaient récupérées. Dans cette partie, je me suis focalisé sur la sortie de VIGIES sans regarder le corps de cet outil.
+
+Ceci m'a aussi permis de remarquer les avantages mais surtout les inconvénients d'une sortie non-structurée. En effet, comme la première version de VIGIES générait une sortie non structurée, les scripts qui devaient interpréter cette sortie passaient plus de temps à respecter la syntaxe très rigoureuse des fichiers de sortie.
+
+Cette partie m'a aussi permis de mieux comprendre le fonctionnement de VIGIES. En fait, lorsque, je regardais un fichier produit par VIGIES, je devais comprendre pourquoi il le générait.
+\subsection{Bilan}
+Cette partie peut sembler, à première vue, superflue. En effet, l’implémentation d'un module que l’on n’utilisera surement pas, ou que très peu peut être vu comme une perte de temps. Mais elle résulte, en fait, d'un choix stratégique tout à fait remarquable. Cette partie préliminaire m’a permis de s'immerger dans le contexte de l'entreprise et dans le projet que l'on m’avait confié. Elle m'a aussi donné l'opportunité, par le codage de différents scripts, de progresser en bash et en système linux.
+
+Ces qualités, ainsi reçues, m'ont été très utiles lors de la deuxième phase du projet. Enfin, cette partie préliminaire m'a permis de visualiser concrètement la sortie demandée (IDMEF) et les différentes alarmes attendues.
+En un mot, le temps que je pensais avoir perdu sur cette partie a été gagné sur la seconde. 
+
+\section{Deuxième partie préliminaire} % Section #2
+\subsubsection{Introduction}
+La deuxième partie fut plus complexe et plus lourde que la première, car l'on devait refaire à la fois la structure et le corps de VIGIES.
+
+Vis à vis de la structure mon projet était très précis et le travail avait déjà été fait. La seule difficulté à ce niveau fut de bien comprendre le but et le sens de cette nouvelle structure.
+
+La structure devait permettre de séparer les différents outils à l'intérieur de VIGIES. Comme des couches réseaux, cette nouvelle version de VIGIES devait séparer l'implémentation des différentes actions. 
+
+Les deux actions que VIGIES  doit implémenter dans cette nouvelle action sont la consolidation et la corrélation des informations. Ces termes, un peu barbares sont en fait simples à comprendre.
+
+La consolidation est la première étape. Elle doit mettre en avant de manière condensée les informations critiques du système. Cette étape consiste à lire les logs remontés par le compilateur, comprendre la syntaxe des différents fichiers lus. Ceci dans le but mettre une valeur sémantique sur chaque information. Quelque fois un exemple vaut mieux qu'un long paragraphe. Le choix le plus judicieux pour illustrer cette partie, est de parler de  de la façon dont VIGIES traite les fichiers passwd et shadow. Pour un compte donné on récupère donc deux lignes avec des champs séparés par des ':'. Le travail du consolidateur est de rassembler ces deux lignes et de remplir une structure afin de les lier.
+
+Afin que les deux modules puissent communiquer ensemble tout en fonctionnant de manière indépendante, il a fallu établir un protocole de communication. L'IPMS choisi est simplement des fichiers unix dans lesquels on utilise le langage JSON. Ce langage permet, de manière légère, de gérer des données structurées. 
+
+Enfin, nous avons le corrélateur. C'est dans cette partie où l'intelligence de VIGIES est implémentée. En effet, le corrélateur doit prendre la structure donnée par le consolidateur et comprendre les valeurs des différents champs  afin de lever ou non des alarmes. Pour reprendre l'exemple ci-dessus, le corrélateur lèvera une alarme si un compte avec le mot de passe root ne possède pas de mot de passe. La sortie du corrélateur est tout simplement la sortie de VIGIES donc c'est pourquoi le corrélateur crée des fichiers IDMEF.
+
+Ces deux éléments sont faits avec le langage Perl. Néanmoins, grâce à la séparation des tâches, les deux éléments peuvent ne pas voir le même langage. De plus, ils peuvent être améliorés indépendamment l'un de l'autre.
+\subsubsection{Corrélateur}
+Comme expliqué dans le paragraphe précédent l'implémentation du corrélateur a été facilitée par la première partie du projet. Ici, mon travail consistait à recopier le script initialement écrit en bash, l'améliorer et implémenter la sortie que l'on souhaite. Au final, le nouveau n'avait, à part l'idée générale, rien à voir avec l'ancien.
+
+Le Corrélateur génère 3 sorties différentes. Les deux premières sont des données structurées classées dans deux répertoires différents (IS et ES) et une troisième sortie un peu spéciale.
+
+Cette sortie est un graphe qui permet de donner un résultat visuel de point clef de l'IMPS. Par exemple, un graphique est créé pour visualiser les connexions journalières entre les différentes machines de l'IMPS.
+
+Cette sortie, différente des deux autres, a été implémentée afin de donner ... Le choix d'implémenter cette sortie dans le corrélateur a été fait afin de ne pas parcourir une deuxième fois les logs.
+
+Les deux autres sorties quant à elles sont plus telles que l'on les attendait (en JSON).
+
+La différence entre les deux sorties est le fait qu'elle n'expose pas les événements de la même façon. 
+
+La sortie stockée dans le dossier ES expose les évènements de sécurité générés par l'IPMS. Nous appelons évènement de sécurité tout évènement nouveau qui peut mettre en péril l'intégrité et la sécurité du système. Comme par exemple, l'ajout d'un compte sur une machine. Pour pouvoir remonter ces événements de sécurité, le corrélateur fait ressortir les différences entre les configurations de la veille et du jour même. Les logs sont aussi traités comme étant des évènements de sécurité.
+
+Néanmoins, même si les éléments de sécurité reflètent toutes actions subies sur le parc informatique, il est intéressant de pouvoir comparer l'ensemble des configurations. Pour rester sur notre exemple, un individu malveillant pourrait lors de la création d'un nouveau compte donner un uid (user identification) déjà utilisé et ainsi permettre d'outrepasser ses droits. A la création du compte, on ne verra pas le problème. C'est pourquoi, il est intéressant de temps en temps de faire une vérification un peu plus approfondie des fichiers de configuration. Le résultat de cette vérification est contenu dans le dossier IS (Information Système).
+
+
+\subsubsection{Consolidateur}
+Le consolidateur prend en entrée les différentes sorties générées par le corrélateur. Son but est de de comprendre les différents valeurs et ainsi vérifier la sécurité du système. L'implémentation de cette partie de VIGIES est très simple. Elle consiste juste à vérifier la validité d'un certain nombre de règles logiques. Par exemple, pour un nouveau compte on va vérifier que si le compte créé est un compte système, alors son  mot de passe est étoilé (c'est à dire que l'on ne peut pas y accéder grâce à un mot de passe).
+
+\subsubsection{conclusion}
+
+La nouvelle version de VIGIES est donc composée de modules indépendants et communiquant entre eux grâce à des fichiers unix.
+
+L'arborescence a été faite afin de simplifier et de compartimenter les différents composants.
+
+D'une façon simplifiée, on peut dire que le consolidateur lit les fichiers de configuration et les logs. Il identifie et qualifie chaque composant. Il répond à la question: qu'est-ce que ce champ fait la ? 
+
+Ensuite le corrélateur applique des règles logiques sur les différents composants pour savoir s'il faut lever une alarme ou  non.
+\newpage
+\section{Conclusion} % Section #2
+Ce stage fut très intéressant, d'un point de vue technique et managérial. En effet, il m'a permis d'acquérir de l'expérience dans la sécurité des systèmes UNIX,  plus spécifiquement le système basé sur la distribution debian. J'ai aussi acquit les brides essentielles des langages tels que bash et perl.
+
+Mais ce stage m'a aussi permis de m'enrichir d'une expérience exceptionnelle dans une entreprise telle que la Gendarmerie, en me mettant au cœur d'un groupe technique. J'ai découvert à la fois le travail au sein d'une institution nationale et à l'intérieur du groupe technique de la Gendarmerie Nationale.
+
+
+
+
+
+\end{document} % Fin du document
+
+
+
