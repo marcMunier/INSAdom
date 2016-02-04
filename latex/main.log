@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.9.10)  4 FEB 2016 19:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.9.10)  4 FEB 2016 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,7 +562,12 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Images/png/insa_logo.png
-> <./Images/jpg/domotic.jpg>] [1] [2
+> <./Images/jpg/domotic.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+[1] [2
 
 ] (./main.toc)
 \tf@toc=\write3
@@ -570,17 +575,22 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
  [3
 
-] [4
+]
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+[4
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3431 strings out of 493485
- 47016 string characters out of 3143526
- 113032 words of memory out of 3000000
- 6628 multiletter control sequences out of 15000+200000
+ 3433 strings out of 493485
+ 47039 string characters out of 3143526
+ 116032 words of memory out of 3000000
+ 6630 multiletter control sequences out of 15000+200000
  17856 words of font info for 44 fonts, out of 3000000 for 9000
  959 hyphenation exceptions out of 8191
- 37i,5n,35p,320b,285s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,5n,35p,1000b,285s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
 r/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-supe
@@ -589,7 +599,7 @@ r/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr
 ype1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb>
-Output written on main.pdf (5 pages, 164728 bytes).
+Output written on main.pdf (5 pages, 171656 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
