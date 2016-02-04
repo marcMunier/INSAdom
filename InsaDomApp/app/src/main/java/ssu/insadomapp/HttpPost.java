@@ -1,5 +1,6 @@
+
 package ssu.insadomapp;
-/*
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,11 +18,11 @@ import java.net.URLEncoder;
 
 /**
  * Created by Marc on 16/12/2015.
+*/
 
-
-public class HttpPostExample extends Activity {
-
-    TextView content;
+public class HttpPost extends Activity {
+}
+  /*  TextView content;
     EditText fname, email, login, pass;
     String Name, Email, Login, Pass;
 

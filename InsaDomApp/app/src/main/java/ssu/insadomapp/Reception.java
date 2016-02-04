@@ -56,6 +56,11 @@ public class Reception extends AppCompatActivity {
         // Opening SharedPreferences
 //        sharedpreferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
 
+        //essai URL GET
+
+        //fin essai URL GET
+
+
         //Database
         datasource = new HomeDataSource(this);
         datasource.open();
@@ -64,8 +69,8 @@ public class Reception extends AppCompatActivity {
 
         /*String essai_nom = "mamoune"; String essai_URL = "172.30.3.66:8080";
         Home home = new Home();
-        home.setName(essai_nom);home.setURL(essai_URL);
-        */
+        home.setName(essai_nom);home.setURL(essai_URL);*/
+
 
         //datasource.createHome(home); //ok ça marche
         //datasource.deleteHome((long) 2 ); //ok ça marche

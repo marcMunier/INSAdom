@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextClock
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textClock"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:height="@dimen/circular_button_elevation"
+        android:phoneNumber="true"
+        android:textColor="#31dcbd"
+        android:text="@string/common_google_play_services_invalid_account_text"
+        android:textSize="@dimen/diag_content_side_padding_round" />
+</LinearLayout>
