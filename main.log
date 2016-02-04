@@ -1,0 +1,33 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.4)  4 FEB 2016 21:58
+entering extended mode
+**C:/Users/BAIZ/dossier/main.tex
+(C:/Users/BAIZ/dossier/main.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+! I can't find file `./preambule.tex'.
+l.9 \input ./preambule.tex 
+                           %sans saut de ligne
+Please type another input file name: rapport
+! I can't find file `rapport'.
+l.9 \input ./preambule.tex 
+                           %sans saut de ligne
+Please type another input file name: rapport.pdf
+! I can't find file `rapport.pdf'.
+l.9 \input ./preambule.tex 
+                           %sans saut de ligne
+Please type another input file name: 
+! Emergency stop.
+l.9 \input ./preambule.tex 
+                           %sans saut de ligne
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 9 strings out of 493634
+ 154 string characters out of 3140534
+ 52604 words of memory out of 3000000
+ 3491 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 5i,0n,3p,92b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
