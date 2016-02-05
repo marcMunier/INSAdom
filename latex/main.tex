@@ -184,7 +184,7 @@ Etant donné que le protocole Z-Wave se base sur une seule plage de fréquence i
 Ce détecteur est très sensible à la fumée, mais pas juste à la fumée. Certains matériaux brûlent avant de capter la fumée sous haute température.
 Voilà pourquoi les ingénieurs de  FIBARO ont décidé d'inclure une protection supplémentaire: un capteur de fumée sous la forme d'un capteur de température.
  Si la quantité de fumée n'est pas assez suffisante pour déclencher l'alarme, l'appareil sera toujours en mesure de détecter la menace.
-En effet il est sensible à un changement rapide de température provoqué par un feu. Il détect aussi lorsque la température dépasse les 54°C. Ceci est alors suffisant pour le capteur de fumée pour découvrir la menace et signaler les utilisateurs à ce sujet. 
+En effet il est sensible à un changement rapide de température provoqué par un feu. Il détecte aussi lorsque la température dépasse les 54°C. Ceci est alors suffisant pour le capteur de fumée pour découvrir la menace et signaler les utilisateurs à ce sujet. 
 
 
 Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la norme Norme EN14604
@@ -218,8 +218,37 @@ Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la nor
 
 FIBARO Flood Sensor:
 
-LA capteur d'innondation FIBARO , une taille compacte et une grande variété de fonctions supplémentaires . Ce capteur est tout simplement remarquable ! Ce dispositif unique peut vous garantir une sécurité optimale . Avec sa technologie de pointe et de précision , le capteur d'innondation Fibaro vous alerte de crue menaçante , ou un changement radical de température . Tout en étant sans entretien et sans la nécessité d'une installation professionnelle .
+Le capteur d'innondation FIBARO , une taille compacte et une grande variété de fonctions supplémentaires . Ce capteur est tout simplement remarquable ! Ce dispositif unique peut vous garantir une sécurité optimale . Avec sa technologie de pointe et de précision , le capteur d'innondation Fibaro vous alerte de crue menaçante , ou un changement radical de température . Tout en étant sans entretien et sans la nécessité d'une installation professionnelle .
 
+LA FIBARO Wall Plug, une prise murale, qui permet d'indiquer, la consommation de la puissance électrique qui passe en courant, en temps réel sous forme d'un halo lumineux autour de la prise.
+
+Ce capteur respecte des normes de sécurité très exigeantes, et obligatoires dans certains pays nordiques.
+
+
+-Protection enfants et fonction veilleuse.
+
+
+-Configuration ultra-simple grâce à l'unique bouton est aux indications lumineuses.
+
+
+-Puissance maximale autorisée :
+
+    *2500W (11A) avec charge résistive (éclairage incandescent / halogène, radiateur, four à convection, etc.).
+    
+
+    *1500W (8A) avec charge capacitive (ampoules LED ou Fluo, TV et appareils électroniques, four MO, plaques à indiction,etc.).
+    
+    
+    *En cas de doute sur le type de charge, ne dépassez pas 1500W.
+
+
+-Fonction répéteur pour étendre le réseau Z-Wave.
+
+
+-Modèle avec prise Française (Type E)
+
+
+-Garantie 2 ans 
 \subsection*{le Logiciel (domoticz)}
 Domoticz est un logiciel libre de gestion de domotique qui a pour but d’être exécutable sur un grand nombre de machines différente. Et ce qui fait son principal atout, c’est que le Raspberry Pi fait partie des machines sur lesquelles il peut tourner ! Ce qui permet donc d’en faire une machine dédiée aux opérations domotiques à prix très réduit. 
 
@@ -229,6 +258,10 @@ Domoticz est un logiciel libre de gestion de domotique qui a pour but d’être 
 \input ./III_MiseEnPlace.tex %sans saut de ligne
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
+\chapter{Les problèmes rencontrées}
+Tout au long du projet, nous avons rencontré quelques difficultés, que nous avons réussi à résoudre. Dans ce chapitre, nous allons décrire tous les problèmes rencontrés, et les solutions que nous avons décidé pour résoudre ces derniers.
+\subsection{Cartes SD grillées }
+Avant de commencer le projet, il nous ai été donné deux raspberry Pi et tous les composants qui va nous permettre de connecter la raspberry Pi2 et de s'en servir. Parmi ces éléments de raspberry Pi, des cartes SD nous ont été offertes pour réaliser le projet. Néanmoins, parmi plusieurs cartes SD, un grand nombre été non fonctionnelles, et d'autres ont cessé de fonctionner après certains essais avec la raspberry Pi2. A cause des installations nombreuses de système que nous avons dû réaliser tout au long du projet, nous avons décidé de travailler avec une seule raspberry Pi, et de changer la version de la raspberry Pi en raspberry Pi2, pour des raisons d'optimisation. Après cette manoeuvre, nous avons pu avancer plus rapidement, avec aucun souci de connexion ni de mémoire.
 
 \end{document}
