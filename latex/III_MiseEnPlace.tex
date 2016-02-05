@@ -1,6 +1,6 @@
 \chapter{Mise en place du projet}
-La mise en place de ce projet peut parraitre relativement simple pour un habitué mais s'avère trés fastidieuse pour une personne novice.
-La partie suivant a pour objectif de détailler les différentes étapes de la mise en place de ce projet.
+La mise en place de ce projet peut paraitre relativement simple pour un habitué mais s'avère trés fastidieuse pour une personne novice.
+La partie suivantie a pour objectif de détailler les différentes étapes de la mise en place de ce projet.
 %Afin de rendre accessible ce projet au plus grand nombre. 
 Pour mettre en place un reseau domotique, comme celui exposé dans ce rapport, vous aurait besoins du matériel suivant :
 
@@ -17,5 +17,36 @@ Une raspberry pi est un petit ordinateur avec un prix trés abordable (autour de
 Avant toutes chose vous avez besoin de configurer sa memoire. Concrètement vous allez creer sur la carte SD (ou micro SD) un systeme de fichier.
 Ce système de fichier permettra à la raspberry PI de démarrer, de sauvegarder les paramètres dont elle a besoin dans différents fichiers et de permettre à l'utilisateur de stoquer des données.
 Afin d'effectuer cette action, vous devez télécharger l'ISO officiel 
-Pour des utilisateurs beaucoup plus expirimentés vous pouvez vous même creer votre système de fichier grace à l'ouitl buildroot.mettre la carte SD ( ou la micro carte SD) dans le lecteur 
+
+wget https://downloads.raspberrypi.org/raspbian_latest
+
+Pour des utilisateurs beaucoup plus expirimentés vous pouvez vous même creer votre système de fichier grace à l'ouitl buildroot.
+
+Il faut ensuite flasher l'ISO sur la carte SD. Pour cela, vous devez mettre la carte SD ( ou la micro carte SD) dans le lecteur de carte adéquate. 
+Executer la commande dmesg sur votre terminal dans le but de savoir quel fichier représente le lecteur.
+
+[91588.698451] sd 6:0:0:0: [sdb] 3891200 512-byte logical blocks: (1.99 GB/1.85 GiB)
+
+Il faut ensuite demonter le périphérique, dans le cas où il monté.
+
+umont /media
+
+Ensuite vous devez recopier byte par byte l'ISO sur la carte SD.
+
+dd if=/MON_CHEMIN_VERS_L_ISO/raspbian_latest of=/dev/sdb
+
+Attention: il faut bien monter le système de fichier à la racine /dev/sdb et non /dev/sdbX 
+
+Une fois ces étapes effectuées, inserer la carte SD dans la raspeberry pi.
+
+Brancher l'antenne Zwave sur votre raspberry et allumer la.
+Afin d'avoir accès à votre raspberry vous devez brancher un ecran et un clavier. 
+
+L'utilisateur creer sur votre raspberry est : pi
+le mot de passe est raspberry. 
+
+Attention souvent le clavier est en qwerty.
+
+
+
 
