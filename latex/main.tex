@@ -72,7 +72,7 @@
 %%%%%%%%%%%%%%%%%%%%% Remerciment %%%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{Remerciement}
-Au terme de notre formation à L’INSA Centre Val de Loire, et tout au long de ce projet il est nécessaire de remercier tous mes professeurs, ainsi que tout le corps professoral et administratif de notre établissement, auxquels je tiens à rendre hommage pour leurs efforts prodigieux qu’ils n’ont cessé de fournir afin que nous puissions, mes collèges et moi, avoir une formation solide et rigoureuse ; pour leur encadrement tout au long de cette année, et pour leur disponibilité permanente. Je n’oublierais pas de remercier spécialement M.Briffaut pour son soutien tout au long du projet, ainsi que ces précieux cours de "domotique" sur lesquelles nous avons abouti à réaliser ce projet.\newline
+Au terme de notre formation à L’INSA Centre Val de Loire, et tout au long de ce projet il est nécessaire de remercier tous mes professeurs, ainsi que tout le corps professoral et administratif de notre établissement, auxquels je tiens à rendre hommage pour leurs efforts prodigieux qu’ils n’ont cessé de fournir afin que nous puissions, mes collèges et moi, avoir une formation solide et rigoureuse ; pour leur encadrement tout au long de cette année, et pour leur disponibilité permanente. Je n’oublierais pas de remercier spécialement M.Briffaut pour son soutien tout au long du projet, ainsi que ces précieux cours de "domotique" qui nous ont aidés à réaliser ce projet.\newline
 
 %marc: ok pour moi peut etre revoir la forme
 \clearpage
@@ -103,14 +103,11 @@ quand on instruit le sage, celui-ci gagne en savoir.
 % 
 %III)	Comment le mettre en place Marc
 %IV)	présentation appronfondie des composants.
-<<<<<<< HEAD
 %V)		Nos difficulté
 %VII)	Conclusion
 %
-=======
 %V)		Nos diffficultés difficulté
 %VII)	Conclusion (fini)
->>>>>>> a74495ea8baa9ea0865a18edc9bf8551502f50d9
 %
 %Ne pas oublier l'annexe
 %Ne pas oublier le glossaire.
@@ -127,7 +124,7 @@ quand on instruit le sage, celui-ci gagne en savoir.
 \newpage
 \chapter{Introduction}
 
-Ce projet se présente comme une très bonne expérience sur le plan théorique et pratique, car il permet de concevoir une première approche sur le monde des objets connectés et plus spécialement en domotiques. Il constitue aussi une occasion unique pour mettre en évidence le cumul des connaissances sue nous avons acquis tout au long de notre formation spécialisée en sécurité ubiquitaire.
+Ce projet se présente comme une très bonne expérience sur le plan théorique et pratique, car il permet de concevoir une première approche sur le monde des objets connectés et plus spécialement en domotiques. Il constitue aussi une occasion unique pour mettre en évidence le cumul des connaissances que nous avons acquis tout au long de notre formation spécialisée en sécurité ubiquitaire.
 
 
 De ce fait, notre binôme a décidé de réaliser un projet concernant la domotique. Toutefois, il est nécessaire de définir ce qu'est la domotique. La domotique est l'ensemble des techniques de l'électronique, de physique du bâtiment, d'automatisme, de l'informatique et des télécommunications utilisées dans les bâtiments, plus ou moins « interopérables » et permettant de centraliser le contrôle des différents systèmes et sous-systèmes de la maison et de l'entreprise (chauffage, volets roulants, porte de garage, 
@@ -136,7 +133,7 @@ confort (gestion d'énergie, optimisation de l'éclairage et du chauffage), de s
 distance, signaux visuels ou sonores, etc.) que l'on peut retrouver dans les maisons, les hôtels, les lieux publics, etc.
 
 
-Ce projet consiste alors à créer une petite centrale domotique grâce à une raspberry, permettant d'informer l'utilisateur sur certaines données captées grâce à des capteurs. Cette mini centrale permettera alors à l'utilisateur d'améliorer son confort et surtout sa sécurité. Ceci ne pourrait être que bénéfique envers les utilisateurs potentiels. La domotique est de plus en plus présente dans notre quotidien. Grâce à elle nous pouvons alors économiser de l'énergie ( gestion du chauffage, gestion de l'éclairage, gestion des volets ), augmenter l'autonomie des personnes handicapées ( assistance à l'ouverture des portes, des fenêtres, des volets, pilotage des appareils électriques, commande vocale ) ou encore améliorer la sécurité de nos habitations ( système d'alarme ). La mise en place d'un système domotisé peut se faire dès la construction d'un bâtiment ( norme KNX ), lors d'une rénovation, ou encore de façon ponctuelle ( norme X10 ).
+Ce projet consiste alors à créer une petite centrale domotique grâce à une raspberry, permettant d'informer l'utilisateur sur certaines données reçues par des capteurs. Cette mini centrale permettera alors à l'utilisateur d'améliorer son confort et surtout sa sécurité. Ceci ne pourrait être que bénéfique envers les utilisateurs potentiels. La domotique est de plus en plus présente dans notre quotidien. Grâce à elle nous pouvons alors économiser de l'énergie ( gestion du chauffage, gestion de l'éclairage, gestion des volets ), augmenter l'autonomie des personnes handicapées ( assistance à l'ouverture des portes, des fenêtres, des volets, pilotage des appareils électriques, commande vocale ) ou encore améliorer la sécurité de nos habitations ( système d'alarme ). La mise en place d'un système domotisé peut se faire dès la construction d'un bâtiment ( norme KNX ), lors d'une rénovation, ou encore de façon ponctuelle ( norme X10 ).
 
 
 
@@ -145,13 +142,13 @@ Ce projet consiste alors à créer une petite centrale domotique grâce à une r
 
 \newpage
 \chapter{Presentation du projet}
-\section{les outils} ( raspberry + capteur) 
+\section{les outils} 
 Afin de réaliser ce projet, quelques outils et éléments nous ont été indispensables. Tout d'abord, la centrale qui contrôle tout le système de domotique: La Raspberry Pi.
 
-Le Raspberry Pi est un nano-ordinateur monocarte à processeur ARM conçu par le créateur de jeux vidéo David Braben, dans le cadre de sa fondation Raspberry Pi.Cet ordinateur, qui a la taille d'une carte de crédit, est destiné à encourager l'apprentissage de la programmation informatique. Il permet l'exécution de plusieurs variantes du système d'exploitation libre GNU/Linux et des logiciels compatibles à plusieurs protocole de domotique. Il est fourni nu (carte mère seule, sans boîtier, alimentation, clavier, souris ni écran) dans l'objectif de diminuer les coûts et de permettre l'utilisation de matériel de récupération.
+Le Raspberry Pi est un nano-ordinateur monocarte à processeur ARM conçu par le créateur de jeux vidéo David Braben, dans le cadre de sa fondation Raspberry Pi. Cet ordinateur, qui a la taille d'une carte de crédit, est destiné à encourager l'apprentissage de la programmation informatique. Il permet l'exécution de plusieurs variantes du système d'exploitation libre GNU/Linux et des logiciels compatibles à plusieurs protocole de domotique. Il est fourni nu (carte mère seule, sans boîtier, alimentation, clavier, souris ni écran) dans l'objectif de diminuer les coûts et de permettre l'utilisation de matériel de récupération.
 Cet outil est alors la pièce maîtresse de notre projet domotique. 
-\subsection{Description des composants de la raspberry pi 2}
-
+\subsection{Description de la raspberry pi 2}
+%TODO inclure photo raspberry pi 2
 \begin{description}
 	\item[Environnement] \hfill \\ Linux (Debian, Fedora et ArchLinux), RISC OS , Windows IOT
 	\item[Système d'exploitation] \hfill \\ Linux (Raspbian, Pidora, et Arch Linux ARM gentoo), RISC OS, FreeBSD, NetBSD, Windows 10 IoT (uniquement compatible avec le Raspberry Pi 2), Plan 9
@@ -182,55 +179,27 @@ Cet outil est alors la pièce maîtresse de notre projet domotique.
 	\item[Poid] \hfill \\ 44,885 g (A, B, B+), 23 g (A+)
 \end{description}
 
-\subsection{Les capteurs utilisés}
+\subsection{Les composants utilisés}
 Afin de savoir les données concernant le milieu ambiant contournant la centrale de domotique (la raspberry pi2), il est nécessaire d'utiliser des capteurs pour capturer les données que nous souhaitons, mais aussi d'une antenne posée sur la raspberry analysant les données qu'elle reçoit depuis les capteurs.
 
-\subsubsection{Antenne utilisée}
-Nous avons utilisée une antenne Z-Wave. Z-Wave est un protocol radio conçu pour la domotique, facilement intégré avec la raspberry pi2. Z-Wave fonctionne dans la gamme de fréquences sous-gigahertz, qui dépend des régions (868 MHz en Europe, 908 MHz aux US, et d'autres fréquences suivant les bandes ISM des régions). La portée est d'environ 50 m (davantage en extérieur, moins en intérieur). La technologie utilise la technologie du maillage (mesh) pour augmenter la portée et la fiabilité.
+\subsubsection{Antenne}
+Nous avons utilisée une antenne Z-Wave. Z-Wave est un protocol radio conçu pour la domotique, facilement intégrée avec la raspberry pi2. Z-Wave fonctionne dans la gamme de fréquences sous-gigahertz, qui dépend des régions (868 MHz en Europe, 908 MHz aux US, et d'autres fréquences suivant les bandes ISM des régions). La portée est d'environ 50 m (davantage en extérieur, moins en intérieur). La technologie utilise la technologie du maillage (mesh) pour augmenter la portée et la fiabilité.
 
 Etant donné que le protocole Z-Wave se base sur une seule plage de fréquence il est donc vulnérable à un brouilleur de fréquence.
  De plus le protocole lui-même semble souffrir de problèmes de sécurité.Dans l'état actuel de cette norme, il semble plus prudent de ne confier à Z-Wave que des tâches domotiques limitées aux éléments dont le dysfonctionnement ou le piratage ne pose pas de problème.
-\subsubsection{Capteurs utilisés}
+\subsubsection{Capteurs}
 
 \begin{description}
 \item[FIBARO Smoke Sensor] \hfill \\
 
 \end{description}
 Ce détecteur est très sensible à la fumée, mais pas juste à la fumée. Certains matériaux brûlent avant de capter la fumée sous haute température.
-Voilà pourqu
-oi les ingénieurs de  FIBARO ont décidé d'inclure une protection supplémentaire: un capteur de fumée sous la forme d'un capteur de température.
+Voilà pourquoi les ingénieurs de  FIBARO ont décidé d'inclure une protection supplémentaire: un capteur de fumée sous la forme d'un capteur de température.
  Si la quantité de fumée n'est pas assez suffisante pour déclencher l'alarme, l'appareil sera toujours en mesure de détecter la menace.
 En effet il est sensible à un changement rapide de température provoqué par un feu. Il détecte aussi lorsque la température dépasse les 54°C. Ceci est alors suffisant pour le capteur de fumée pour découvrir la menace et signaler les utilisateurs à ce sujet. 
 
-
-Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la norme Norme EN14604
-
-
--    Fonction "boite noire" (mémoire des événements).
-
-
 -    Sans-fil Z-Wave+.
 
-
--    Design et matériaux nobles.
-
-
--    Compact avec seulement 6,5x2,8cm
-
-
--    Sensibilité réglable.
-
-
--    Bouton de configuration et d'indication multicolore.
-
-
--    Alimentation par pile fournie 
-
-
--    Autonomie de 3 ans env. (peut varier suivant les paramètres de réveil et de transmission des températures).
-
-
--    Garantie 2 ans
 
 FIBARO Flood Sensor:
 
@@ -310,4 +279,34 @@ Le projet que nous avons réalisé pourrait  être complété,  laissant la poss
 -
 
 -
+%%%%%%%%%%%  ANNEXE %%%%%%%%%%%%%%%%%%%
+
+Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la norme Norme EN14604
+
+
+-    Fonction "boite noire" (mémoire des événements).
+
+
+-    Sans-fil Z-Wave+.
+
+
+-    Design et matériaux nobles.
+
+
+-    Compact avec seulement 6,5x2,8cm
+
+
+-    Sensibilité réglable.
+
+
+-    Bouton de configuration et d'indication multicolore.
+
+
+-    Alimentation par pile fournie 
+
+
+-    Autonomie de 3 ans env. (peut varier suivant les paramètres de réveil et de transmission des températures).
+
+
+-    Garantie 2 ans
 \end{document}
