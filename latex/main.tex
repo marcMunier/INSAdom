@@ -32,10 +32,12 @@
     \textsc{\Large Rapport de projet 3\up{ème} année option 2SU}\\[1.5cm]
 
     % Title
-%    \HRule \\[0.4cm]
+%    \HRule 
+%	\\[0.4cm]
     { \huge \bfseries Domotique\\[0.4cm] }
 
-%    \HRule \\[2cm]
+%    \HRule 
+%	\\[2cm]
     \includegraphics[scale=0.5]{Images/jpg/domotic.jpg}
     \\[2cm]
 
@@ -77,6 +79,12 @@ Au terme de notre formation à L’INSA Centre Val de Loire, et tout au long de 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%Résumé%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Résumé}
+\vspace{20pt} 
+\label{chap-savoir}
+\begin{epigraphe}{Les proverbes Pr \textbf{21} 11}
+Quand on châtie le railleur, le simple s’assagit ;\\
+quand on instruit le sage, celui-ci gagne en savoir.
+\end{epigraphe}
 
    Votre résumé commence ici...
    ...
@@ -95,7 +103,7 @@ Au terme de notre formation à L’INSA Centre Val de Loire, et tout au long de 
 % 
 %III)	Comment le mettre en place Marc
 %IV)	présentation appronfondie des composants.
-%V)		Nos diffficultés difficulté
+%V)		Nos difficulté
 %VII)	Conclusion
 %
 %
@@ -181,8 +189,10 @@ Etant donné que le protocole Z-Wave se base sur une seule plage de fréquence i
 \begin{description}
 \item[FIBARO Smoke Sensor] \hfill \\
 
+\end{description}
 Ce détecteur est très sensible à la fumée, mais pas juste à la fumée. Certains matériaux brûlent avant de capter la fumée sous haute température.
-Voilà pourquoi les ingénieurs de  FIBARO ont décidé d'inclure une protection supplémentaire: un capteur de fumée sous la forme d'un capteur de température.
+Voilà pourqu
+oi les ingénieurs de  FIBARO ont décidé d'inclure une protection supplémentaire: un capteur de fumée sous la forme d'un capteur de température.
  Si la quantité de fumée n'est pas assez suffisante pour déclencher l'alarme, l'appareil sera toujours en mesure de détecter la menace.
 En effet il est sensible à un changement rapide de température provoqué par un feu. Il détecte aussi lorsque la température dépasse les 54°C. Ceci est alors suffisant pour le capteur de fumée pour découvrir la menace et signaler les utilisateurs à ce sujet. 
 
@@ -249,7 +259,7 @@ Ce capteur respecte des normes de sécurité très exigeantes, et obligatoires d
 
 
 -Garantie 2 ans 
-\subsection*{le Logiciel (domoticz)}
+\subsection{le Logiciel domoticz}
 Domoticz est un logiciel libre de gestion de domotique qui a pour but d’être exécutable sur un grand nombre de machines différente. Et ce qui fait son principal atout, c’est que le Raspberry Pi fait partie des machines sur lesquelles il peut tourner ! Ce qui permet donc d’en faire une machine dédiée aux opérations domotiques à prix très réduit. 
 
 %Une photo de raspberry pi2 doit être mise ici TODO

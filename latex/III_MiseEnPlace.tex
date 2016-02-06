@@ -18,7 +18,7 @@ Avant toutes chose vous avez besoin de configurer sa memoire. Concrètement vous
 Ce système de fichier permettra à la raspberry PI de démarrer, de sauvegarder les paramètres dont elle a besoin dans différents fichiers et de permettre à l'utilisateur de stoquer des données.
 Afin d'effectuer cette action, vous devez télécharger l'ISO officiel 
 
-wget https://downloads.raspberrypi.org/raspbian_latest
+wget https://downloads.raspberrypi.org/raspbian\_latest
 
 Pour des utilisateurs beaucoup plus expirimentés vous pouvez vous même creer votre système de fichier grace à l'ouitl buildroot.
 
@@ -33,19 +33,20 @@ umont /media
 
 Ensuite vous devez recopier byte par byte l'ISO sur la carte SD.
 
-dd if=/MON_CHEMIN_VERS_L_ISO/raspbian_latest of=/dev/sdb
+dd if=/MON\_CHEMIN\_VERS\_L\_ISO/raspbian\_latest of=/dev/sdb
 
 Attention: il faut bien monter le système de fichier à la racine /dev/sdb et non /dev/sdbX 
 
 Une fois ces étapes effectuées, inserer la carte SD dans la raspeberry pi.
 
 Brancher l'antenne Zwave sur votre raspberry et allumer la.
-Afin d'avoir accès à votre raspberry vous devez brancher un ecran et un clavier. 
+Afin d'avoir accès à la console vous devez brancher un écran et un clavier. 
 
 L'utilisateur creer sur votre raspberry est : pi
 le mot de passe est raspberry. 
 
 Attention souvent le clavier est en qwerty.
+
 
 
 

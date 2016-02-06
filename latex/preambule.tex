@@ -4,6 +4,9 @@
 
 
 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
 %%%%%%%%%%%%%%%%%% Classe dudit Document %%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[a4paper,12pt,openany]{report} % sert à définir des propriétés e base sur les articles
 % Autre paramètres connnus: 	*book => pour de vrais livres
@@ -50,4 +53,20 @@
 \hyphenation{FORTRAN}
 \hyphenation{An-ti-cons-ti-tu-tion-nel-le-ment}
 
+%%%%%%%%%%%%%%%% Citation Environement %%%%%%%%%%%%
+
+\newsavebox{\nomepigraphe}
+\newenvironment{epigraphe}[1]
+	{% clause begin
+	\vspace*{-1.5cm}%
+	\small\sffamily% mise en évidence
+	\savebox{\nomepigraphe}{#1}% une boîte pour sauvegarder
+	% l’ origine de la citation
+	\slshape% tout est penché
+	\begin{changemargin}{0pt}{-2cm}% on se met au large
+	\begin{flushright}}% tout est poussé à droite
+	{% clause end
+	\\[4pt]\usebox{\nomepigraphe}.% insertion de l’origine
+	\end{flushright}%
+	\end{changemargin}\par\vspace*{0.6cm}}
 
