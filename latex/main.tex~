@@ -96,9 +96,9 @@ Au terme de notre formation à L’INSA Centre Val de Loire, et tout au long de 
 %III)	Comment le mettre en place Marc
 %IV)	présentation appronfondie des composants.
 %V)		Nos diffficultés difficulté
-%VII)	Conclusion (fini)
+%VII)	Conclusion
 %
-%Ne pas oublier l'annexe
+%
 %Ne pas oublier le glossaire.
 %
 % chaque partie est à ecrire dans un fichier indépandant du main
@@ -252,19 +252,10 @@ Ce capteur respecte des normes de sécurité très exigeantes, et obligatoires d
 \subsection*{le Logiciel (domoticz)}
 Domoticz est un logiciel libre de gestion de domotique qui a pour but d’être exécutable sur un grand nombre de machines différente. Et ce qui fait son principal atout, c’est que le Raspberry Pi fait partie des machines sur lesquelles il peut tourner ! Ce qui permet donc d’en faire une machine dédiée aux opérations domotiques à prix très réduit. 
 
-\subsection*{L'application}
-Afin d'améliorer notre projet, nous avons décidé de réaliser une application android, permettant aux clients distants de pouvoir se connecter à distance pour accéder aux données partagées par la centrale domotique. Ainsi il pourra gérer son domicile, et créer des scénarios après certaines conditions. Dans la page d'accueil de l'application, l'utilisateur devrait choisir une des chambres ou domiciles qui possédent afin qu'il puisse découvrir l'état de ce dernier. Il a aussi la possibilité d'en rajouter une nouvelle chambre, ou domicile pour qu'il arrive à faire les modifications souhaitées.\newline
-Néanmoins, faute de temps, nous avons pas pu aboutir au résultat souhaité, l'application affiche une page générique par défaut pour toutes les chambres. Cette application n'était pas un élément crucial de notre projet, mais elle aurait pu améliorer notre projet considérablement. Cette thématique pourra alors ouvrir la possibilité de générer de nouveaux projets, essayant de répondre à ce besoin.\newline
-Le code source de cette application sera mis en annexe.\newline
-Nous avons aussi utilisé, l'interface web proposée par Z-Wave afin de générer des scénarios en respectant des conditions (If ---> Then). Avec cet outil, nous avons pu générer plusieurs scénarios. Des vidéos de démonstration se trouvent dans ces liens.\newline
-% Liens de vidéos youtube de démo si possible
-Dans l'interface Web proposée par Zwave, un fichier de log existe permettant à l'utilisateur de pouvoir visualiser tout ce qui se passe pendant la journée concernant les capteurs.
-
-
 %Une photo de raspberry pi2 doit être mise ici TODO
 %%%%%%%%%%%%%%%%%%%%%%%%partie III%%%%%%%%%%%%%%%%%%%%
 
-%\input ./III_MiseEnPlace.tex %sans saut de ligne
+\input ./III_MiseEnPlace.tex %sans saut de ligne
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -276,8 +267,6 @@ Parmi ces éléments de raspberry Pi, des cartes SD nous ont été offertes pour
 A cause des installations nombreuses de système que nous avons dû réaliser tout au long du projet, nous avons décidé de travailler avec une seule raspberry Pi, et de changer la version de la raspberry Pi en raspberry Pi2, pour des raisons d'optimisation. Après cette manoeuvre, nous avons pu avancer plus rapidement, avec aucun souci de connexion ni de mémoire.
 \subsection{Antenne Z-Wave}
 Afin d'analyser les données des capteurs, une Antenne Z-Wave nous a été donnée. Cependant, parmi deux des Z-Wave données une ne marchait pas, ceci nous a encore poussé à éliminer une raspberry et de réaliser le projet avec une seule raspberry.
-\subsection{Arrivée tardive du matériel (Antenne Z-Wave+Capteurs)}
-Afin de faire le projet, un genre de matériel nous ai nécessaire, M.Briffaut nous alors commandé ce matériel pour réaliser ce projet. Toutefois, le matériel est arrivé un peu tardivement. Durant ce temps, nous nous sommes bien documentés pour mieux connaitre la domotique et ses enjeux, mais aussi, nous avons arrivé à bien installé le système sur nos raspberry respectives.   
 %\subsection{ } % Je réaliserai cette partie c'est juste que je souhaite discuter avec toi à propos de cette partie 
 
 \newpage
