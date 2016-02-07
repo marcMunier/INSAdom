@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.9.10)  7 FEB 2016 13:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.9.10)  7 FEB 2016 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -189,6 +189,35 @@ Package babel Info: Making ? an active character on input line 237.
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks21
 )
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count109
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
@@ -201,10 +230,10 @@ Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
-\XKV@depth=\count109
+\XKV@depth=\count110
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
-\xargs@max=\count110
+\xargs@max=\count111
 \xargs@toksa=\toks24
 \xargs@toksb=\toks25
 )
@@ -227,18 +256,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count111
-))
 \Gin@req@height=\dimen118
 \Gin@req@width=\dimen119
 )
@@ -249,7 +267,8 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 (/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-\nomepigraphe=\box52
+\auteurcitation=\box52
+\boitecitation=\box53
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -277,7 +296,7 @@ LaTeX Info: Redefining \up on input line 19.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen120
-\scratchbox=\box53
+\scratchbox=\box54
 \nofMPsegments=\count113
 \nofMParguments=\count114
 \everyMPshowfont=\toks26
@@ -402,492 +421,490 @@ Chapitre 1.
 
 ] [4]
 Chapitre 2.
+<./Images/jpg/WallPlug_FibaroDevice.jpg, id=32, 498.86375pt x 389.455pt>
+File: ./Images/jpg/WallPlug_FibaroDevice.jpg Graphic file (type jpg)
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+<use ./Images/jpg/WallPlug_FibaroDevice.jpg>
+Package pdftex.def Info: ./Images/jpg/WallPlug_FibaroDevice.jpg used on input l
+ine 165.
+(pdftex.def)             Requested size: 249.43126pt x 194.72702pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-<./Images/png/Zwave.png, id=36, 245.718pt x 207.77625pt>
+[6 <./Images/jpg/WallPlug_FibaroDevice.jpg>]
+<./Images/png/Zwave.png, id=43, 245.718pt x 207.77625pt>
 File: ./Images/png/Zwave.png Graphic file (type png)
 
 <use ./Images/png/Zwave.png>
-Package pdftex.def Info: ./Images/png/Zwave.png used on input line 189.
+Package pdftex.def Info: ./Images/png/Zwave.png used on input line 206.
 (pdftex.def)             Requested size: 122.85869pt x 103.88786pt.
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-<./Images/png/smoke.png, id=42, 543.02875pt x 438.63875pt>
+<./Images/png/smoke.png, id=44, 543.02875pt x 438.63875pt>
 File: ./Images/png/smoke.png Graphic file (type png)
 
 <use ./Images/png/smoke.png>
-Package pdftex.def Info: ./Images/png/smoke.png used on input line 202.
+Package pdftex.def Info: ./Images/png/smoke.png used on input line 219.
 (pdftex.def)             Requested size: 217.20764pt x 175.45238pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding: 
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
-(frenchb.ldf)                Degrees used on input line 209.
+(frenchb.ldf)                Degrees used on input line 226.
 
-[7 <./Images/png/Zwave.png> <./Images/png/smoke.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+[7 <./Images/png/Zwave.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<./Images/jpg/floodSensor_FibaroDevice.jpg, id=48, 455.7025pt x 504.88625pt>
+<./Images/jpg/floodSensor_FibaroDevice.jpg, id=49, 455.7025pt x 504.88625pt>
 File: ./Images/jpg/floodSensor_FibaroDevice.jpg Graphic file (type jpg)
 
 <use ./Images/jpg/floodSensor_FibaroDevice.jpg>
 Package pdftex.def Info: ./Images/jpg/floodSensor_FibaroDevice.jpg used on inpu
-t line 215.
+t line 232.
 (pdftex.def)             Requested size: 227.85068pt x 252.44249pt.
 
-<./Images/jpg/WallPlug_FibaroDevice.jpg, id=49, 498.86375pt x 389.455pt>
-File: ./Images/jpg/WallPlug_FibaroDevice.jpg Graphic file (type jpg)
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./Images/jpg/WallPlug_FibaroDevice.jpg Graphic file (type jpg)
 <use ./Images/jpg/WallPlug_FibaroDevice.jpg>
 Package pdftex.def Info: ./Images/jpg/WallPlug_FibaroDevice.jpg used on input l
-ine 225.
+ine 243.
 (pdftex.def)             Requested size: 249.43126pt x 194.72702pt.
- [8 <./Images/jpg/floodSensor_FibaroDevice.jpg>] [9 <./Images/jpg/WallPlug_Fiba
-roDevice.jpg>] [10]
-Chapitre 3.
 
-Overfull \hbox (49.50108pt too wide) in paragraph at lines 266--266
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./Images/png/smoke.png (PNG copy)>] [9 <./Images/jpg/floodSensor_FibaroDevi
+ce.jpg>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 266.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+[10] (./III_MiseEnPlace.tex [11]
+Chapitre 3.
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[]\T1/cmr/m/sl/10.95 d if=/MON_CHEMIN_VERS_L_ISO/raspbian_latest
+ []
+
+) [13]
+Chapitre 4.
+
+Overfull \hbox (49.50108pt too wide) in paragraph at lines 295--295
 []\T1/cmr/bx/n/14.4 Arrivée tar-dive du ma-té-riel (An-tenne Z-Wave+Capteurs) 
  []
 
-[11
+[14
 
-] [12]
-Chapitre 4.
+] [15]
+Chapitre 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
-[13
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+[16
+
+]
+Chapitre 6.
+[17
 
 ] (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [14
+ [18
 
-]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 350.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) <./Images/png/menu_zwaveme.png, id=72, 1154.51324pt x 585.387pt>
+] [19]
+<./Images/png/menu_zwaveme.png, id=90, 1154.51324pt x 585.387pt>
 File: ./Images/png/menu_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/menu_zwaveme.png>
-Package pdftex.def Info: ./Images/png/menu_zwaveme.png used on input line 360.
+Package pdftex.def Info: ./Images/png/menu_zwaveme.png used on input line 395.
 (pdftex.def)             Requested size: 577.25522pt x 292.69278pt.
 
-<./Images/png/devices_zwaveme.png, id=73, 1152.10425pt x 585.387pt>
+Overfull \hbox (187.25522pt too wide) in paragraph at lines 395--396
+ [] 
+ []
+
+<./Images/png/devices_zwaveme.png, id=91, 1152.10425pt x 585.387pt>
 File: ./Images/png/devices_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/devices_zwaveme.png>
-Package pdftex.def Info: ./Images/png/devices_zwaveme.png used on input line 36
-2.
+Package pdftex.def Info: ./Images/png/devices_zwaveme.png used on input line 40
+5.
 (pdftex.def)             Requested size: 576.05072pt x 292.69278pt.
 
-<./Images/png/add_zwaveme.png, id=74, 1155.71774pt x 585.387pt>
+Overfull \hbox (186.05072pt too wide) in paragraph at lines 405--406
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Images/png/add_zwaveme.png, id=92, 1155.71774pt x 585.387pt>
 File: ./Images/png/add_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/add_zwaveme.png>
-Package pdftex.def Info: ./Images/png/add_zwaveme.png used on input line 364.
+Package pdftex.def Info: ./Images/png/add_zwaveme.png used on input line 414.
 (pdftex.def)             Requested size: 577.85747pt x 292.69278pt.
 
-<./Images/png/add2_zwaveme.png, id=75, 1153.911pt x 584.1825pt>
+Overfull \hbox (187.85747pt too wide) in paragraph at lines 414--415
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Images/png/add2_zwaveme.png, id=93, 1153.911pt x 584.1825pt>
 File: ./Images/png/add2_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/add2_zwaveme.png>
-Package pdftex.def Info: ./Images/png/add2_zwaveme.png used on input line 366.
+Package pdftex.def Info: ./Images/png/add2_zwaveme.png used on input line 422.
 (pdftex.def)             Requested size: 576.95409pt x 292.09053pt.
 
-<./Images/png/add3_zwaveme.png, id=76, 1154.51324pt x 584.1825pt>
+Overfull \hbox (186.95409pt too wide) in paragraph at lines 422--423
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Images/png/add3_zwaveme.png, id=94, 1154.51324pt x 584.1825pt>
 File: ./Images/png/add3_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/add3_zwaveme.png>
-Package pdftex.def Info: ./Images/png/add3_zwaveme.png used on input line 368.
+Package pdftex.def Info: ./Images/png/add3_zwaveme.png used on input line 431.
 (pdftex.def)             Requested size: 577.25522pt x 292.09053pt.
 
-Overfull \hbox (407.15297pt too wide) in paragraph at lines 359--369
-\T1/cmr/m/n/12 ra-mètre en haut à droite, et choi-sir De-vices. [] 
+Overfull \hbox (187.25522pt too wide) in paragraph at lines 431--432
+ [] 
  []
 
 
-Overfull \hbox (423.72191pt too wide) in paragraph at lines 359--369
-\T1/cmr/m/n/12 --> Ap-puyer dans la par-tie ZWave sur Add new [] 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (281.18195pt too wide) in paragraph at lines 359--369
-\T1/cmr/m/n/12 de chaque cap-teur [] 
- []
-
-
-Overfull \hbox (267.84406pt too wide) in paragraph at lines 359--369
-\T1/cmr/m/n/12 --> Lais-ser faire [] 
- []
-
-
-Overfull \hbox (368.06111pt too wide) in paragraph at lines 359--369
-\T1/cmr/m/n/12 --> L'élé-ment est ajouté avec suc-cès [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--369
-
- []
-
-[15] [16 <./Images/png/menu_zwaveme.png> <./Images/png/devices_zwaveme.png>]
-[17 <./Images/png/add_zwaveme.png>] [18 <./Images/png/add2_zwaveme.png> <./Imag
-es/png/add3_zwaveme.png>]
-<./Images/png/add4_zwaveme.png, id=91, 1145.4795pt x 585.98924pt>
+<./Images/png/add4_zwaveme.png, id=95, 1145.4795pt x 585.98924pt>
 File: ./Images/png/add4_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/add4_zwaveme.png>
-Package pdftex.def Info: ./Images/png/add4_zwaveme.png used on input line 370.
+Package pdftex.def Info: ./Images/png/add4_zwaveme.png used on input line 437.
 (pdftex.def)             Requested size: 572.73836pt x 292.9939pt.
 
-Overfull \hbox (200.36317pt too wide) in paragraph at lines 370--371
-[][] 
+Overfull \hbox (182.73836pt too wide) in paragraph at lines 437--438
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-<./Images/png/ecranCapteur.png, id=92, 1153.911pt x 587.796pt>
+<./Images/png/ecranCapteur.png, id=96, 1153.911pt x 587.796pt>
 File: ./Images/png/ecranCapteur.png Graphic file (type png)
 
 <use ./Images/png/ecranCapteur.png>
-Package pdftex.def Info: ./Images/png/ecranCapteur.png used on input line 375.
+Package pdftex.def Info: ./Images/png/ecranCapteur.png used on input line 446.
 (pdftex.def)             Requested size: 576.95409pt x 293.89728pt.
 
-Overfull \hbox (204.5789pt too wide) in paragraph at lines 375--376
-[][] 
+Overfull \hbox (186.95409pt too wide) in paragraph at lines 446--447
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[19 <./Images/png/add4_zwaveme.png>]
-<./Images/png/device_zwaveme.png, id=96, 1147.28625pt x 584.78474pt>
+<./Images/png/device_zwaveme.png, id=97, 1147.28625pt x 584.78474pt>
 File: ./Images/png/device_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/device_zwaveme.png>
-Package pdftex.def Info: ./Images/png/device_zwaveme.png used on input line 377
+Package pdftex.def Info: ./Images/png/device_zwaveme.png used on input line 454
 .
 (pdftex.def)             Requested size: 573.64172pt x 292.39165pt.
 
-Overfull \hbox (201.26654pt too wide) in paragraph at lines 377--378
-[][] 
+Overfull \hbox (183.64172pt too wide) in paragraph at lines 454--455
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[20 <./Images/png/ecranCapteur.png>]
-<./Images/png/home_zwaveme.png, id=100, 1155.71774pt x 588.39825pt>
+[20 <./Images/png/menu_zwaveme.png>]
+<./Images/png/home_zwaveme.png, id=101, 1155.71774pt x 588.39825pt>
 File: ./Images/png/home_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/home_zwaveme.png>
-Package pdftex.def Info: ./Images/png/home_zwaveme.png used on input line 384.
+Package pdftex.def Info: ./Images/png/home_zwaveme.png used on input line 466.
 (pdftex.def)             Requested size: 577.85747pt x 294.19841pt.
 
-Overfull \hbox (298.64156pt too wide) in paragraph at lines 383--385
-[]\T1/cmr/m/n/12 --> Le mode home [] 
+Overfull \hbox (187.85747pt too wide) in paragraph at lines 466--467
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--385
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[21 <./Images/png/device_zwaveme.png>]
-<./Images/png/go_to_zwaveme.png, id=104, 1156.32pt x 625.1355pt>
+<./Images/png/go_to_zwaveme.png, id=102, 1156.32pt x 625.1355pt>
 File: ./Images/png/go_to_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/go_to_zwaveme.png>
-Package pdftex.def Info: ./Images/png/go_to_zwaveme.png used on input line 388.
+Package pdftex.def Info: ./Images/png/go_to_zwaveme.png used on input line 474.
 
 (pdftex.def)             Requested size: 578.15858pt x 312.56697pt.
 
-Overfull \hbox (205.7834pt too wide) in paragraph at lines 388--389
-[][] 
+Overfull \hbox (188.15858pt too wide) in paragraph at lines 474--475
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[22 <./Images/png/home_zwaveme.png>]
-<./Images/png/expert_zwaveme.png, id=108, 1144.275pt x 585.98924pt>
+<./Images/png/expert_zwaveme.png, id=103, 1144.275pt x 585.98924pt>
 File: ./Images/png/expert_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/expert_zwaveme.png>
-Package pdftex.def Info: ./Images/png/expert_zwaveme.png used on input line 392
+Package pdftex.def Info: ./Images/png/expert_zwaveme.png used on input line 482
 .
 (pdftex.def)             Requested size: 572.1361pt x 292.9939pt.
 
-Overfull \hbox (199.76091pt too wide) in paragraph at lines 392--393
-[][] 
+Overfull \hbox (182.1361pt too wide) in paragraph at lines 482--483
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[23 <./Images/png/go_to_zwaveme.png>]
-<./Images/png/manage_zwaveme.png, id=112, 1153.911pt x 586.5915pt>
+<./Images/png/manage_zwaveme.png, id=104, 1153.911pt x 586.5915pt>
 File: ./Images/png/manage_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/manage_zwaveme.png>
-Package pdftex.def Info: ./Images/png/manage_zwaveme.png used on input line 396
+Package pdftex.def Info: ./Images/png/manage_zwaveme.png used on input line 491
 .
 (pdftex.def)             Requested size: 576.95409pt x 293.29503pt.
 
-Overfull \hbox (204.5789pt too wide) in paragraph at lines 396--397
-[][] 
+Overfull \hbox (186.95409pt too wide) in paragraph at lines 491--492
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[24 <./Images/png/expert_zwaveme.png>]
-<./Images/png/delete_zwaveme.png, id=117, 1154.51324pt x 584.78474pt>
+<./Images/png/delete_zwaveme.png, id=105, 1154.51324pt x 584.78474pt>
 File: ./Images/png/delete_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/delete_zwaveme.png>
-Package pdftex.def Info: ./Images/png/delete_zwaveme.png used on input line 404
+Package pdftex.def Info: ./Images/png/delete_zwaveme.png used on input line 504
 .
 (pdftex.def)             Requested size: 577.25522pt x 292.39165pt.
 
-Overfull \hbox (204.88004pt too wide) in paragraph at lines 404--405
-[][] 
+Overfull \hbox (187.25522pt too wide) in paragraph at lines 504--505
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[25 <./Images/png/manage_zwaveme.png>]
-<./Images/png/exclusion_zwaveme.png, id=121, 1153.911pt x 584.78474pt>
+<./Images/png/exclusion_zwaveme.png, id=106, 1153.911pt x 584.78474pt>
 File: ./Images/png/exclusion_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/exclusion_zwaveme.png>
 Package pdftex.def Info: ./Images/png/exclusion_zwaveme.png used on input line 
-406.
+510.
 (pdftex.def)             Requested size: 576.95409pt x 292.39165pt.
 
-Overfull \hbox (204.5789pt too wide) in paragraph at lines 406--407
-[][] 
+Overfull \hbox (186.95409pt too wide) in paragraph at lines 510--511
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[26 <./Images/png/delete_zwaveme.png>]
-<./Images/png/devices_exclu_zwaveme.png, id=125, 1155.71774pt x 585.98924pt>
+<./Images/png/devices_exclu_zwaveme.png, id=107, 1155.71774pt x 585.98924pt>
 File: ./Images/png/devices_exclu_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/devices_exclu_zwaveme.png>
 Package pdftex.def Info: ./Images/png/devices_exclu_zwaveme.png used on input l
-ine 411.
+ine 519.
 (pdftex.def)             Requested size: 577.85747pt x 292.9939pt.
 
-Overfull \hbox (205.48228pt too wide) in paragraph at lines 411--412
-[][] 
+Overfull \hbox (187.85747pt too wide) in paragraph at lines 519--520
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[27 <./Images/png/exclusion_zwaveme.png>]
-<./Images/png/app_zwaveme.png, id=129, 1156.32pt x 585.387pt>
+<./Images/png/app_zwaveme.png, id=108, 1156.32pt x 585.387pt>
 File: ./Images/png/app_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/app_zwaveme.png>
-Package pdftex.def Info: ./Images/png/app_zwaveme.png used on input line 416.
+Package pdftex.def Info: ./Images/png/app_zwaveme.png used on input line 528.
 (pdftex.def)             Requested size: 578.15858pt x 292.69278pt.
 
-Overfull \hbox (205.7834pt too wide) in paragraph at lines 416--417
-[][] 
+Overfull \hbox (188.15858pt too wide) in paragraph at lines 528--529
+ [] 
  []
 
+[21 <./Images/png/devices_zwaveme.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[28 <./Images/png/devices_exclu_zwaveme.png>]
-<./Images/png/device_Status.png, id=133, 1154.51324pt x 585.98924pt>
+<./Images/png/device_Status.png, id=112, 1154.51324pt x 585.98924pt>
 File: ./Images/png/device_Status.png Graphic file (type png)
 
 <use ./Images/png/device_Status.png>
-Package pdftex.def Info: ./Images/png/device_Status.png used on input line 420.
+Package pdftex.def Info: ./Images/png/device_Status.png used on input line 536.
 
 (pdftex.def)             Requested size: 577.25522pt x 292.9939pt.
 
-Overfull \hbox (204.88004pt too wide) in paragraph at lines 420--421
-[][] 
+Overfull \hbox (187.25522pt too wide) in paragraph at lines 536--537
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[29 <./Images/png/app_zwaveme.png>]
-<./Images/png/description_zwaveme.png, id=137, 1147.8885pt x 584.78474pt>
+<./Images/png/description_zwaveme.png, id=113, 1147.8885pt x 584.78474pt>
 File: ./Images/png/description_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/description_zwaveme.png>
 Package pdftex.def Info: ./Images/png/description_zwaveme.png used on input lin
-e 425.
+e 545.
 (pdftex.def)             Requested size: 573.94286pt x 292.39165pt.
 
-Overfull \hbox (201.56767pt too wide) in paragraph at lines 425--426
-[][] 
+Overfull \hbox (183.94286pt too wide) in paragraph at lines 545--546
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[30 <./Images/png/device_Status.png>]
-<./Images/png/log_zwaveme.png, id=142, 1147.8885pt x 585.387pt>
+<./Images/png/log_zwaveme.png, id=114, 1147.8885pt x 585.387pt>
 File: ./Images/png/log_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/log_zwaveme.png>
-Package pdftex.def Info: ./Images/png/log_zwaveme.png used on input line 430.
+Package pdftex.def Info: ./Images/png/log_zwaveme.png used on input line 554.
 (pdftex.def)             Requested size: 573.94286pt x 292.69278pt.
 
-Overfull \hbox (201.56767pt too wide) in paragraph at lines 430--431
-[][] 
+Overfull \hbox (183.94286pt too wide) in paragraph at lines 554--555
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[31 <./Images/png/description_zwaveme.png>]
-<./Images/png/room_zwaveme.png, id=146, 1154.51324pt x 585.387pt>
+<./Images/png/room_zwaveme.png, id=115, 1154.51324pt x 585.387pt>
 File: ./Images/png/room_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/room_zwaveme.png>
-Package pdftex.def Info: ./Images/png/room_zwaveme.png used on input line 434.
+Package pdftex.def Info: ./Images/png/room_zwaveme.png used on input line 562.
 (pdftex.def)             Requested size: 577.25522pt x 292.69278pt.
 
-Overfull \hbox (204.88004pt too wide) in paragraph at lines 434--435
-[][] 
+Overfull \hbox (187.25522pt too wide) in paragraph at lines 562--564
+ []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
-
- []
-
-[32 <./Images/png/log_zwaveme.png>]
-<./Images/png/smoke_description_zwaveme.png, id=150, 1142.46825pt x 587.796pt>
+<./Images/png/smoke_description_zwaveme.png, id=116, 1142.46825pt x 587.796pt>
 File: ./Images/png/smoke_description_zwaveme.png Graphic file (type png)
 
 <use ./Images/png/smoke_description_zwaveme.png>
 Package pdftex.def Info: ./Images/png/smoke_description_zwaveme.png used on inp
-ut line 438.
+ut line 567.
 (pdftex.def)             Requested size: 571.23273pt x 293.89728pt.
 
-Overfull \hbox (198.85754pt too wide) in paragraph at lines 438--439
-[][] 
+Overfull \hbox (181.23273pt too wide) in paragraph at lines 567--568
+ [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
-
- []
-
-[33 <./Images/png/room_zwaveme.png>]
 File: ./Images/png/description_zwaveme.png Graphic file (type png)
-
 <use ./Images/png/description_zwaveme.png>
 Package pdftex.def Info: ./Images/png/description_zwaveme.png used on input lin
-e 440.
+e 571.
 (pdftex.def)             Requested size: 573.94286pt x 292.39165pt.
 
-Overfull \hbox (201.56767pt too wide) in paragraph at lines 440--441
-[][] 
+Overfull \hbox (183.94286pt too wide) in paragraph at lines 571--573
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+LaTeX Warning: Float too large for page by 349.02205pt on input line 574.
 
- []
 
-[34 <./Images/png/smoke_description_zwaveme.png>] [35] (./main.aux) ) 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./Images/png/add_zwaveme.png>] [23 <./Images/png/add2_zwaveme.png>]
+[24 <./Images/png/add3_zwaveme.png>] [25 <./Images/png/add4_zwaveme.png>]
+[26 <./Images/png/ecranCapteur.png>] [27 <./Images/png/device_zwaveme.png>]
+[28 <./Images/png/home_zwaveme.png>] [29 <./Images/png/go_to_zwaveme.png>]
+[30 <./Images/png/expert_zwaveme.png>] [31 <./Images/png/manage_zwaveme.png>]
+[32 <./Images/png/delete_zwaveme.png>] [33 <./Images/png/exclusion_zwaveme.png>
+] [34 <./Images/png/devices_exclu_zwaveme.png>] [35 <./Images/png/app_zwaveme.p
+ng>] [36 <./Images/png/device_Status.png>] [37 <./Images/png/description_zwavem
+e.png>] [38 <./Images/png/log_zwaveme.png>] [39 <./Images/png/room_zwaveme.png>
+ <./Images/png/smoke_description_zwaveme.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4482 strings out of 493485
- 64252 string characters out of 3143526
- 130362 words of memory out of 3000000
- 7626 multiletter control sequences out of 15000+200000
- 20488 words of font info for 48 fonts, out of 3000000 for 9000
+ 4953 strings out of 493485
+ 69576 string characters out of 3143526
+ 143580 words of memory out of 3000000
+ 8085 multiletter control sequences out of 15000+200000
+ 22083 words of font info for 50 fonts, out of 3000000 for 9000
  959 hyphenation exceptions out of 8191
- 37i,7n,35p,998b,630s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/shar
-e/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sftt1200.pfb>
-Output written on main.pdf (36 pages, 3315673 bytes).
+ 37i,8n,35p,998b,630s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfsl1095.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (40 pages, 3362157 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 226 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

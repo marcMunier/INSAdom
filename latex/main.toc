@@ -3,12 +3,27 @@
 \contentsline {chapter}{\numberline {2}Presentation du projet}{5}
 \contentsline {section}{\numberline {2.1}les outils}{5}
 \contentsline {subsection}{\numberline {2.1.1}Description de la raspberry pi 2}{5}
-\contentsline {subsection}{\numberline {2.1.2}Les composants utilis\IeC {\'e}s}{6}
-\contentsline {subsubsection}{Antenne}{6}
+\contentsline {subsection}{\numberline {2.1.2}Les composants utilis\IeC {\'e}s}{7}
+\contentsline {subsubsection}{Antenne}{7}
 \contentsline {subsubsection}{Les Capteurs}{7}
-\contentsline {subsection}{\numberline {2.1.3}le Logiciel domoticz}{9}
-\contentsline {chapter}{\numberline {3}Les probl\IeC {\`e}mes rencontr\IeC {\'e}es}{11}
-\contentsline {subsection}{\numberline {3.0.4}Cartes SD grill\IeC {\'e}es }{11}
-\contentsline {subsection}{\numberline {3.0.5}Antenne Z-Wave}{11}
-\contentsline {subsection}{\numberline {3.0.6}Arriv\IeC {\'e}e tardive du mat\IeC {\'e}riel (Antenne Z-Wave+Capteurs)}{12}
-\contentsline {chapter}{\numberline {4}Conclusion}{13}
+\contentsline {subsection}{\numberline {2.1.3}le Logiciel domoticz}{10}
+\contentsline {subsection}{\numberline {2.1.4}Le logiciel ZwaveMe}{10}
+\contentsline {subsection}{\numberline {2.1.5}L'application Android}{10}
+\contentsline {chapter}{\numberline {3}Mise en place du projet}{12}
+\contentsline {section}{\numberline {3.1}Raspberry}{12}
+\contentsline {chapter}{\numberline {4}Les probl\IeC {\`e}mes rencontr\IeC {\'e}es}{14}
+\contentsline {subsection}{\numberline {4.0.1}Cartes SD grill\IeC {\'e}es }{14}
+\contentsline {subsection}{\numberline {4.0.2}Antenne Z-Wave}{14}
+\contentsline {subsection}{\numberline {4.0.3}Arriv\IeC {\'e}e tardive du mat\IeC {\'e}riel (Antenne Z-Wave+Capteurs)}{15}
+\contentsline {chapter}{\numberline {5}Conclusion}{16}
+\contentsline {chapter}{\numberline {6}ANNEXES}{17}
+\contentsline {section}{\numberline {6.1}Index des Images}{17}
+\contentsline {section}{\numberline {6.2}caract\IeC {\'e}ristique des capteurs utilis\IeC {\'e}e}{19}
+\contentsline {subsection}{\numberline {6.2.1}Caract\IeC {\'e}ristiques du capteur de fum\IeC {\'e}e FIBARO}{19}
+\contentsline {subsection}{\numberline {6.2.2}Caract\IeC {\'e}ristique Wall plug}{19}
+\contentsline {section}{\numberline {6.3} code de l'application Android}{19}
+\contentsline {section}{\numberline {6.4} Ajout et configuration d'un capteur dans ZWaveMe}{20}
+\contentsline {subsection}{\numberline {6.4.1}Ajout d'un capteur sur l'interface ZwaveMe}{20}
+\contentsline {subsection}{\numberline {6.4.2}Configurer ces capteurs}{21}
+\contentsline {subsection}{\numberline {6.4.3}Supprimer un capteur}{21}
+\contentsline {section}{\numberline {6.5}D\IeC {\'e}monstration}{22}

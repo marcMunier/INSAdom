@@ -31,6 +31,7 @@
 \usepackage[utf8x]{inputenc} 
 %\usepackage[utf8]{inputenc}% permet de spécifier le codeage des caractère utiliser dans le source.
 \usepackage[english,francais]{babel}
+\usepackage{xcolor}
 %\usepackage{asmath} %Fonctions servant à l'écriture mathématique
 \usepackage{xspace} %Fonctions permettant d'introduire des espaces
 \usepackage{xargs} %Permet d'utiliser de définir plus simplement des fonctions
@@ -59,18 +60,28 @@
 
 %%%%%%%%%%%%%%%% Citation Environement %%%%%%%%%%%%
 
-\newsavebox{\nomepigraphe}
-\newenvironment{epigraphe}[1]
-	{% clause begin
-	\vspace*{-1.5cm}%
-	\small\sffamily% mise en évidence
-	\savebox{\nomepigraphe}{#1}% une boîte pour sauvegarder
-	% l’ origine de la citation
-	\slshape% tout est penché
-	\begin{changemargin}{0pt}{-2cm}% on se met au large
-	\begin{flushright}}% tout est poussé à droite
-	{% clause end
-	\\[4pt]\usebox{\nomepigraphe}.% insertion de l’origine
-	\end{flushright}%
-	\end{changemargin}\par\vspace*{0.6cm}}
+
+% un boite pour l ’auteur de la citation
+\newsavebox{\auteurcitation}
+\newsavebox{\boitecitation}
+\definecolor{coulcitation}{rgb}{0.60,0.70,0.90}%
+
+\newenvironment{terminal}[1]{% clause begin
+% on sauve l ’argument 1 pour l ’auteur
+	\savebox{\auteurcitation}{#1}%
+	\begin{lrbox}{\boitecitation}
+
+
+	\begin{minipage}{.8\linewidth}
+	\small\slshape%
+}% on passe en petit et penché
+{% clause end : on pousse l ’auteur de la citation à droite
+	\end{minipage}
+	\end{lrbox}
+	\begin{center}
+	\colorbox{coulcitation}{\usebox{\boitecitation}}
+	\end{center}
+}
+
+
 

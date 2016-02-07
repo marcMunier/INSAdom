@@ -1,53 +1,81 @@
 \chapter{Mise en place du projet}
 La mise en place de ce projet peut paraitre relativement simple pour un habitué mais s'avère trés fastidieuse pour une personne novice.
-La partie suivantie a pour objectif de détailler les différentes étapes de la mise en place de ce projet.
+La partie suivante a pour objectif de détailler les différentes étapes de la mise en place de ce projet.
 %Afin de rendre accessible ce projet au plus grand nombre. 
-Pour mettre en place un reseau domotique, comme celui exposé dans ce rapport, vous aurait besoins du matériel suivant :
+Pour mettre en place un reseau domotique, comme celui exposé dans ce rapport, vous aurez besoin du matériel suivant :
 
 \begin{itemize}
-	\item D'un  ordinateur. Cette ordinateur vous servira à configurer la raspberry et  les différents capteurs grace à un site internet.
-	\item D'une raspberry-pi I ou II. 
-	\item D'un lecteur de carte SD (ou si vous avait opté pour une raspeberry-pi II un lecteur de micro carte SD).
-	\item D'une antenne Z-Wave
-	\item De différents capteurs disposant de la technologie Zwave. Nous avons choisi, pour tester notre projet, des capteurs venant de l'entreprise FIBARO. Les capteur choisit sont floodSensor, WallPlug et Smoke Sensor.
+	\item d'un  ordinateur. Cet ordinateur vous servira à configurer la raspberry et les différents capteurs grâce à un site internet.
+	\item d'une raspberry-pi I ou II. 
+	\item d'un lecteur de carte SD (ou si vous avez opté pour une raspeberry-pi II un lecteur de micro carte SD).
+	\item d'une antenne Z-Wave
+	\item de différents capteurs disposant de la technologie Zwave. Nous avons choisi, pour tester notre projet, des capteurs venant de l'entreprise FIBARO. Les capteurs choisis sont floodSensor, WallPlug et Smoke Sensor.
 \end{itemize}
 
 \section{Raspberry}
 Une raspberry pi est un petit ordinateur avec un prix trés abordable (autour de 30 euros).
-Avant toutes chose vous avez besoin de configurer sa memoire. Concrètement vous allez creer sur la carte SD (ou micro SD) un systeme de fichier.
-Ce système de fichier permettra à la raspberry PI de démarrer, de sauvegarder les paramètres dont elle a besoin dans différents fichiers et de permettre à l'utilisateur de stoquer des données.
-Afin d'effectuer cette action, vous devez télécharger l'ISO officiel 
+Avant toute chose, vous avez besoin de configurer sa memoire. Concrètement vous allez creer sur la carte SD (ou micro SD) un systeme de fichier.
+Ce système de fichier permettra à la raspberry PI de démarrer, de sauvegarder les paramètres dont elle a besoin dans différents fichiers et de permettre à l'utilisateur de stocker des données.
+Afin d'effectuer cette action, vous devez télécharger l'ISO officiel. 
 
+
+\begin{terminal}
 wget https://downloads.raspberrypi.org/raspbian\_latest
+\end{terminal}
 
-Pour des utilisateurs beaucoup plus expirimentés vous pouvez vous même creer votre système de fichier grace à l'ouitl buildroot.
+Pour les utilisateurs beaucoup plus expérimentés vous pouvez vous même créer votre système de fichier grâce à l'outil buildroot.
 
-Il faut ensuite flasher l'ISO sur la carte SD. Pour cela, vous devez mettre la carte SD ( ou la micro carte SD) dans le lecteur de carte adéquate. 
-Executer la commande dmesg sur votre terminal dans le but de savoir quel fichier représente le lecteur.
+Il faut ensuite flasher l'ISO sur la carte SD. Pour cela, vous devez mettre la carte SD ( ou la micro carte SD) dans le lecteur de carte adéquate, exécutez la commande dmesg sur votre terminal dans le but de savoir quel fichier représente le lecteur USB.
 
-[91588.698451] sd 6:0:0:0: [sdb] 3891200 512-byte logical blocks: (1.99 GB/1.85 GiB)
 
-Il faut ensuite demonter le périphérique, dans le cas où il monté.
+\begin{terminal}
+ [91588.698451] sd 6:0:0:0: [sdb] 3891200 512-byte logical blocks: (1.99 GB/1.85 GiB)
+\end{terminal}
 
-umont /media
+Il faut ensuite demonter le périphérique, s'il est monté.
+
+\begin{terminal}
+ umont /media
+\end{terminal}
+
 
 Ensuite vous devez recopier byte par byte l'ISO sur la carte SD.
 
-dd if=/MON\_CHEMIN\_VERS\_L\_ISO/raspbian\_latest of=/dev/sdb
+\begin{terminal}
+ dd if=/MON\_CHEMIN\_VERS\_L\_ISO/raspbian\_latest of=/dev/sdb
+\end{terminal}
 
-Attention: il faut bien monter le système de fichier à la racine /dev/sdb et non /dev/sdbX 
+Attention: il faut bien monter le système de fichier à la racine /dev/sdb et non /dev/sdbX.
 
-Une fois ces étapes effectuées, inserer la carte SD dans la raspeberry pi.
+Une fois ces étapes effectuées, insérez la carte SD dans la raspeberry pi.
 
-Brancher l'antenne Zwave sur votre raspberry et allumer la.
+Branchez l'antenne Zwave sur votre raspberry et allumez la.
 Afin d'avoir accès à la console vous devez brancher un écran et un clavier. 
 
-L'utilisateur creer sur votre raspberry est : pi
-le mot de passe est raspberry. 
+L'utilisateur créé sur votre raspberry est : pi,
+le mot de passe est: raspberry. 
 
 Attention souvent le clavier est en qwerty.
 
+Il vous suffit maintenant d'installer le logiciel ZWaveMe. Pour cela rien de plus simple tapez la commande suivante : 
 
 
 
+\begin{terminal}
+ wget -q -O - razberry.z-wave.me/install | sudo bash
+\end{terminal}
 
+Cette commande va télécharger un script bash et l'exécuter avec des droits sudo.
+
+Il est toute fois recommandé de lire le script avant de l'exécuter. Pour cela utliser la commande suivante :
+
+\begin{terminal}
+ wget -q -O - razberry.z-wave.me/install | less
+\end{terminal}
+
+Voilà votre Central domotique est fonctionnelle. Pour accèder à l'interface graphique rendez vous à l'adresse suivante  :
+
+\url{http://MON\_ADDRESSE\_IP:8083}
+
+
+Une section de l'annexe est consacrer à l'explication de comment intégrer un capteur dans ZWaveMe.
