@@ -78,25 +78,25 @@ Au terme de notre formation à L’INSA Centre Val de Loire, et tout au long de 
 \clearpage
 \newpage
 %%%%%%%%%%%%%%%%%%%%%Résumé%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Résumé}
-\vspace{20pt} 
-\label{chap-savoir}
-\begin{epigraphe}{Les proverbes Pr \textbf{21} 11}
-Quand on châtie le railleur, le simple s’assagit ;\\
-quand on instruit le sage, celui-ci gagne en savoir.
-\end{epigraphe}
+%\section*{Résumé}
+%\vspace{40pt} 
+%\label{chap-savoir}
+%\begin{epigraphe}{Les proverbes Pr \textbf{21} 11}
+%Quand on châtie le railleur, le simple s’assagit ;\\
+%quand on instruit le sage, celui-ci gagne en savoir.
+%\end{epigraphe}
 
-   Votre résumé commence ici...
-   ...
+ %  Votre résumé commence ici...
+%   ...
 
-\newpage
+%\newpage
 %%%%%%%%%%%%%%%%%%%%%table des matières%%%%%%%%%%%%%%%
 \tableofcontents
 \clearpage
 
 %%%%%%%%%%%PLAN
 %
-%\section*{Introduction} %( comment on a fait ce projet, en quoi il consiste, les enjeux )
+%\section*{Introduction} %(comment on a fait ce projet, en quoi il consiste, les enjeux)
 %Mamoune
 %Mamoune: Dans cette partie il est conseillé de prendre une photo représentant la conception 
 %		C)	l'application
@@ -132,7 +132,7 @@ confort (gestion d'énergie, optimisation de l'éclairage et du chauffage), de s
 distance, signaux visuels ou sonores, etc.) que l'on peut retrouver dans les maisons, les hôtels, les lieux publics, etc.
 
 
-Ce projet consiste alors à créer une petite centrale domotique grâce à une raspberry, permettant d'informer l'utilisateur sur certaines données reçues par des capteurs. Cette mini centrale permettera alors à l'utilisateur d'améliorer son confort et surtout sa sécurité. Ceci ne pourrait être que bénéfique envers les utilisateurs potentiels. La domotique est de plus en plus présente dans notre quotidien. Grâce à elle nous pouvons alors économiser de l'énergie ( gestion du chauffage, gestion de l'éclairage, gestion des volets ), augmenter l'autonomie des personnes handicapées ( assistance à l'ouverture des portes, des fenêtres, des volets, pilotage des appareils électriques, commande vocale ) ou encore améliorer la sécurité de nos habitations ( système d'alarme ). La mise en place d'un système domotisé peut se faire dès la construction d'un bâtiment ( norme KNX ), lors d'une rénovation, ou encore de façon ponctuelle ( norme X10 ).
+Ce projet consiste alors à créer une petite centrale domotique grâce à une raspberry, permettant d'informer l'utilisateur sur certaines données reçues par des capteurs. Cette mini centrale permettera alors à l'utilisateur d'améliorer son confort et surtout sa sécurité. Ceci ne pourrait être que bénéfique envers les utilisateurs potentiels. La domotique est de plus en plus présente dans notre quotidien. Grâce à elle nous pouvons alors économiser de l'énergie (gestion du chauffage, gestion de l'éclairage, gestion des volets), augmenter l'autonomie des personnes handicapées (assistance à l'ouverture des portes, des fenêtres, des volets, pilotage des appareils électriques, commande vocale) ou encore améliorer la sécurité de nos habitations (système d'alarme). La mise en place d'un système domotisé peut se faire dès la construction d'un bâtiment (norme KNX), lors d'une rénovation, ou encore de façon ponctuelle (norme X10).
 
 
 
@@ -184,58 +184,58 @@ Afin de savoir les données concernant le milieu ambiant contournant la centrale
 \subsubsection{Antenne}
 Nous avons utilisée une antenne Z-Wave. Z-Wave est un protocol radio conçu pour la domotique, facilement intégrée avec la raspberry pi2. Z-Wave fonctionne dans la gamme de fréquences sous-gigahertz, qui dépend des régions (868 MHz en Europe, 908 MHz aux US, et d'autres fréquences suivant les bandes ISM des régions). La portée est d'environ 50 m (davantage en extérieur, moins en intérieur). La technologie utilise la technologie du maillage (mesh) pour augmenter la portée et la fiabilité.
 
-\includegraphics[scale=0.5]{./Images/png/Zwave.png}\newline
+\begin{figure}[h]
+	\center
+	\includegraphics[scale=0.5]{./Images/png/Zwave.png}\newline
+	\caption{Antenne Zwave}
+\end{figure}
 
 Etant donné que le protocole Z-Wave se base sur une seule plage de fréquence il est donc vulnérable à un brouilleur de fréquence.
  De plus le protocole lui-même semble souffrir de problèmes de sécurité.Dans l'état actuel de cette norme, il semble plus prudent de ne confier à Z-Wave que des tâches domotiques limitées aux éléments dont le dysfonctionnement ou le piratage ne pose pas de problème.
-\subsubsection{Capteurs}
+\subsubsection{Les Capteurs}
 
 \begin{description}
 \item[FIBARO Smoke Sensor] \hfill \\
 
-\end{description}
+\begin{figure}[h]
+	\center
+	\includegraphics[scale=0.4]{./Images/png/smoke.png}
+	\caption{Capteur de fumeé}
+\end{figure}
+
 Ce détecteur est très sensible à la fumée, mais pas juste à la fumée. Certains matériaux brûlent avant de capter la fumée sous haute température.
 Voilà pourquoi les ingénieurs de  FIBARO ont décidé d'inclure une protection supplémentaire: un capteur de fumée sous la forme d'un capteur de température.
  Si la quantité de fumée n'est pas assez suffisante pour déclencher l'alarme, l'appareil sera toujours en mesure de détecter la menace.
 En effet il est sensible à un changement rapide de température provoqué par un feu. Il détecte aussi lorsque la température dépasse les 54°C. Ceci est alors suffisant pour le capteur de fumée pour découvrir la menace et signaler les utilisateurs à ce sujet. 
 
-\includegraphics[scale=0.5]{./Images/png/smoke.png}\newline
+\item[FIBARO Flood Sensor] \hfill \\
 
-
-FIBARO Flood Sensor:
+\begin{figure}[h]
+	\center
+	\includegraphics[scale=0.5]{./Images/jpg/floodSensor_FibaroDevice.jpg}
+	\caption{Capteur d'innondation}
+\end{figure}
 
 Le capteur d'innondation FIBARO , une taille compacte et une grande variété de fonctions supplémentaires . Ce capteur est tout simplement remarquable ! Ce dispositif unique peut vous garantir une sécurité optimale . Avec sa technologie de pointe et de précision , le capteur d'innondation Fibaro vous alerte de crue menaçante , ou un changement radical de température . Tout en étant sans entretien et sans la nécessité d'une installation professionnelle .
 
-\includegraphics[scale=0.5]{./Images/png/Fibaro.png}\newline
-LA FIBARO Wall Plug, une prise murale, qui permet d'indiquer, la consommation de la puissance électrique qui passe en courant, en temps réel sous forme d'un halo lumineux autour de la prise.
+
+\item[LA FIBARO Wall Plug] \hfill \\
+\begin{figure}[h]
+	\center
+	\includegraphics[scale=0.5]{./Images/jpg/WallPlug_FibaroDevice.jpg}
+	\caption{Capteur d'énergie}
+\end{figure}
+
+Ce capteur a la forme une prise murale.Elle peut indiquer, la consommation de la puissance électrique qui passe en courant, en temps réel sous forme d'un halo lumineux autour de la prise.
 
 Ce capteur respecte des normes de sécurité très exigeantes, et obligatoires dans certains pays nordiques.
 
+Il permet en outre de connaître la consomonation en temps réelle mais aussi la consomation moyenne. Ce capteur donne aussi la possibilité d'éteindre et d'allumer la prise à distance.
 
--Protection enfants et fonction veilleuse.
-
-
--Configuration ultra-simple grâce à l'unique bouton est aux indications lumineuses.
+\end{description}
 
 
--Puissance maximale autorisée :
 
-    *2500W (11A) avec charge résistive (éclairage incandescent / halogène, radiateur, four à convection, etc.).
-    
-
-    *1500W (8A) avec charge capacitive (ampoules LED ou Fluo, TV et appareils électroniques, four MO, plaques à indiction,etc.).
-    
-    
-    *En cas de doute sur le type de charge, ne dépassez pas 1500W.
-
-
--Fonction répéteur pour étendre le réseau Z-Wave.
-
-
--Modèle avec prise Française (Type E)
-
-
--Garantie 2 ans 
 \subsection{le Logiciel domoticz}
 Domoticz est un logiciel libre de gestion de domotique qui a pour but d’être exécutable sur un grand nombre de machines différente. Et ce qui fait son principal atout, c’est que le Raspberry Pi fait partie des machines sur lesquelles il peut tourner ! Ce qui permet donc d’en faire une machine dédiée aux opérations domotiques à prix très réduit. 
 
@@ -276,6 +276,12 @@ Durant le présent projet, il nous a été confié comme mission de réaliser un
 L'élaboration de ce travail nous a permis d'une part, d'approfondir nos connaissances acquises et le savoir faire que nous avons pu réaliser tout au long de cette année de spécialité 2SU, et d'autre part de découvrir les solutions que proposent le monde de la domotique.\newline
 
 %%%%%%%%%%%  ANNEXE %%%%%%%%%%%%%%%%%%%
+\newpage
+
+\listoffigures
+
+\newpage
+
 *Caractéristiques du capteur de fumée FIBARO:
 
  
@@ -310,6 +316,36 @@ Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la nor
 
 
 -    Sans-fil Z-Wave+.
+
+
+Caractéristique Wall plug
+
+
+
+-Protection enfants et fonction veilleuse.
+
+
+-Configuration ultra-simple grâce à l'unique bouton est aux indications lumineuses.
+
+
+-Puissance maximale autorisée :
+
+    *2500W (11A) avec charge résistive (éclairage incandescent / halogène, radiateur, four à convection, etc.).
+    
+
+    *1500W (8A) avec charge capacitive (ampoules LED ou Fluo, TV et appareils électroniques, four MO, plaques à indiction,etc.).
+    
+    
+    *En cas de doute sur le type de charge, ne dépassez pas 1500W.
+
+
+-Fonction répéteur pour étendre le réseau Z-Wave.
+
+
+-Modèle avec prise Française (Type E)
+
+
+-Garantie 2 ans 
 
 *Pour retrouver le code Android des différents programme Android réalisés, veuillez suivre ce lien:  \url{https://github.com/marcMunier/INSAdom/tree/master/InsaDomApp}
 
@@ -393,7 +429,7 @@ Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la nor
 
 \includegraphics[scale=0.5]{./Images/png/log_zwaveme.png}\newline
 
-* Ajouter des chambres ou des homes ( Notre application Android se base sur ce principe)
+* Ajouter des chambres ou des homes (Notre application Android se base sur ce principe)
 
 \includegraphics[scale=0.5]{./Images/png/room_zwaveme.png}\newline
 
