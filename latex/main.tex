@@ -184,7 +184,7 @@ Afin de savoir les données concernant le milieu ambiant contournant la centrale
 \subsubsection{Antenne}
 Nous avons utilisée une antenne Z-Wave. Z-Wave est un protocol radio conçu pour la domotique, facilement intégrée avec la raspberry pi2. Z-Wave fonctionne dans la gamme de fréquences sous-gigahertz, qui dépend des régions (868 MHz en Europe, 908 MHz aux US, et d'autres fréquences suivant les bandes ISM des régions). La portée est d'environ 50 m (davantage en extérieur, moins en intérieur). La technologie utilise la technologie du maillage (mesh) pour augmenter la portée et la fiabilité.
 
-\includegraphics[scale=0.5]{./latex/Images/png/Zwave.png}\newline
+\includegraphics[scale=0.5]{./Images/png/Zwave.png}\newline
 
 Etant donné que le protocole Z-Wave se base sur une seule plage de fréquence il est donc vulnérable à un brouilleur de fréquence.
  De plus le protocole lui-même semble souffrir de problèmes de sécurité.Dans l'état actuel de cette norme, il semble plus prudent de ne confier à Z-Wave que des tâches domotiques limitées aux éléments dont le dysfonctionnement ou le piratage ne pose pas de problème.
@@ -199,14 +199,14 @@ Voilà pourquoi les ingénieurs de  FIBARO ont décidé d'inclure une protection
  Si la quantité de fumée n'est pas assez suffisante pour déclencher l'alarme, l'appareil sera toujours en mesure de détecter la menace.
 En effet il est sensible à un changement rapide de température provoqué par un feu. Il détecte aussi lorsque la température dépasse les 54°C. Ceci est alors suffisant pour le capteur de fumée pour découvrir la menace et signaler les utilisateurs à ce sujet. 
 
-\includegraphics[scale=0.5]{./latex/Images/smoke.png}\newline
+\includegraphics[scale=0.5]{./Images/png/smoke.png}\newline
 
 
 FIBARO Flood Sensor:
 
 Le capteur d'innondation FIBARO , une taille compacte et une grande variété de fonctions supplémentaires . Ce capteur est tout simplement remarquable ! Ce dispositif unique peut vous garantir une sécurité optimale . Avec sa technologie de pointe et de précision , le capteur d'innondation Fibaro vous alerte de crue menaçante , ou un changement radical de température . Tout en étant sans entretien et sans la nécessité d'une installation professionnelle .
 
-\includegraphics[scale=0.5]{./latex/Images/png/Fibaro.png}\newline
+\includegraphics[scale=0.5]{./Images/png/Fibaro.png}\newline
 LA FIBARO Wall Plug, une prise murale, qui permet d'indiquer, la consommation de la puissance électrique qui passe en courant, en temps réel sous forme d'un halo lumineux autour de la prise.
 
 Ce capteur respecte des normes de sécurité très exigeantes, et obligatoires dans certains pays nordiques.
@@ -311,7 +311,7 @@ Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la nor
 
 -    Sans-fil Z-Wave+.
 
-*Pour retrouver le code Android des différents programme Android réalisés, veuillez suivre ce lien:  \href{https://github.com/marcMunier/INSAdom/tree/master/InsaDomApp}
+*Pour retrouver le code Android des différents programme Android réalisés, veuillez suivre ce lien:  \url{https://github.com/marcMunier/INSAdom/tree/master/InsaDomApp}
 
 
 *Etapes pour la configuration et l'ajout d'un capteurs d'un capteur avec ZWaveMe:
@@ -321,43 +321,43 @@ Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la nor
 
 
 --> Pour ajouter un élément, il faut tout d'abord appuyer sur la touche paramètre en haut à droite, et choisir Devices.
-\includegraphics[scale=0.5]{./latex/Images/png/menu_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/menu_zwaveme.png}\newline
  --> Appuyer dans la partie ZWave sur Add new
-\includegraphics[scale=0.5]{./latex/Images/png/devices_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/devices_zwaveme.png}\newline
 --> Appuyer sur Start inclusion et réveiller votre matériel en suivant les règles de chaque capteur
-\includegraphics[scale=0.5]{./latex/Images/png/add_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/add_zwaveme.png}\newline
 --> Laisser faire
-\includegraphics[scale=0.5]{./latex/Images/png/add2_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/add2_zwaveme.png}\newline
 --> L'élément est ajouté avec succès
-\includegraphics[scale=0.5]{./latex/Images/png/add3_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/add3_zwaveme.png}\newline
 
-\includegraphics[scale=0.5]{./latex/Images/png/add4_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/add4_zwaveme.png}\newline
 
 
 -Les capteurs disponibles:
 
-\includegraphics[scale=0.5]{./latex/Images/png/ecranCapteur.png}\newline
+\includegraphics[scale=0.5]{./Images/png/ecranCapteur.png}\newline
 
-\includegraphics[scale=0.5]{./latex/Images/png/device_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/device_zwaveme.png}\newline
 
 
 *Il existe deux modes de gestions des capteurs avec l'interface ZWaveMe, le mode home et le mode expert:
 
 
 --> Le mode home
-\includegraphics[scale=0.5]{./latex/Images/png/home_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/home_zwaveme.png}\newline
 
 --> Pour accéder au mode expert il faut suivre le lien en haut de l'image
 
-\includegraphics[scale=0.5]{./latex/Images/png/go_to_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/go_to_zwaveme.png}\newline
 
 --> Mode expert
 
-\includegraphics[scale=0.5]{./latex/Images/png/expert_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/expert_zwaveme.png}\newline
 
 * Pour gérer vos capteurs, l'interface Web ZWaveMe (mode home) propose une solution:
 
-\includegraphics[scale=0.5]{./latex/Images/png/manage_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/manage_zwaveme.png}\newline
 
 * Si vous souhaitez supprimer un capteur (un device), vous avez la possibilité en suivant ces images:
 
@@ -365,45 +365,45 @@ Ce capteur répond à la nouvelle norme EN14604. -    Nouvelle version à la nor
 --> Appuyer sur start exclusion
 
 
-\includegraphics[scale=0.5]{./latex/Images/png/delete_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/delete_zwaveme.png}\newline
 
-\includegraphics[scale=0.5]{./latex/Images/png/exclusion_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/exclusion_zwaveme.png}\newline
 
 --> Le device sera alors exclu
 
 
-\includegraphics[scale=0.5]{./latex/Images/png/devices_exclu_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/devices_exclu_zwaveme.png}\newline
 
 
 * Les applications disponibles concernants les capteurs:
 
-\includegraphics[scale=0.5]{./latex/Images/png/app_zwaveme.png}\newline 
+\includegraphics[scale=0.5]{./Images/png/app_zwaveme.png}\newline 
 
 * Dans le mode expert, vous pouvez remarquer l'état de vos capteurs
 
-\includegraphics[scale=0.5]{./latex/Images/png/device_Status.png}\newline
+\includegraphics[scale=0.5]{./Images/png/device_Status.png}\newline
 
 
 * Une description détaillée des capteurs disponibles (mode expert)
 
-\includegraphics[scale=0.5]{./latex/Images/png/description_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/description_zwaveme.png}\newline
 
 * Le log des capteurs qui permet de vérifier l'état des capteurs en temps continu et réel (Veille, On, Off, ...)
 
 
-\includegraphics[scale=0.5]{./latex/Images/png/log_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/log_zwaveme.png}\newline
 
 * Ajouter des chambres ou des homes ( Notre application Android se base sur ce principe)
 
-\includegraphics[scale=0.5]{./latex/Images/png/room_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/room_zwaveme.png}\newline
 
 * Desciption des capteurs (mode expert)
 
-\includegraphics[scale=0.5]{./latex/Images/png/smoke_description_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/smoke_description_zwaveme.png}\newline
 
-\includegraphics[scale=0.5]{./latex/Images/png/description_zwaveme.png}\newline
+\includegraphics[scale=0.5]{./Images/png/description_zwaveme.png}\newline
 
 * Une vidéo d'une de nos démonstration sur le flood sensor se trouve sur ce lien:
- \href{https://www.youtube.com/watch?v=nNWe8rKhf1o&feature=youtu.be}
+ \url{https://www.youtube.com/watch?v=nNWe8rKhf1o&feature=youtu.be}
 
 \end{document}
